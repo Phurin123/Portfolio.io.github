@@ -56,7 +56,7 @@
         <div class="container hero-split">
             <div class="hero-image-side fade-in">
                 <div class="hero-image-wrapper">
-                    <img src="./src/รูปหน้าตรง.jpg" alt="Phurin Sukman" class="hero-profile-img">
+                    <img src="./src/รูปหน้าตรง1.jpg" alt="Phurin Sukman" class="hero-profile-img">
                 </div>
             </div>
             <div class="hero-content-side fade-in">
@@ -367,17 +367,41 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="container contact-container fade-in">
-            <h2 data-i18n="contact_title">ร่วมงานกับ<span class="text-accent">ผม</span></h2>
-            <p data-i18n="contact_desc">สนใจจ้างงาน หรือต้องการสอบถามข้อมูลเพิ่มเติม
-                สามารถติดต่อผมได้ทางช่องทางด้านล่างนี้</p>
-            <a href="mailto:66020981@up.ac.th" class="btn btn-primary" data-i18n="btn_email">อีเมลติดต่อ</a>
+        <div class="container fade-in">
+            <h2 class="section-title text-center" data-i18n="contact_title">ร่วมงานกับ<span
+                    class="text-accent">ผม</span></h2>
+            <div class="contact-grid">
+                <!-- Email Card -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 data-i18n="contact_email_label">Email</h3>
+                    <p>lovewiko649@gmail.com</p>
+                    <a href="https://mail.google.com/mail/u/0/?to=lovewiko649@gmail.com&fs=1&tf=cm" target="_blank"
+                        rel="noopener noreferrer" class="contact-btn" data-i18n="btn_send_email">ส่งอีเมล</a>
+                </div>
 
-            <div class="social-links">
-                <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/boriwat-wongtama-170b373a8/" target="_blank"
-                    rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <!-- Phone Card -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3 data-i18n="contact_phone_label">Phone</h3>
+                    <p>088-288-4744</p>
+                    <a href="tel:0882884744" class="contact-btn" data-i18n="btn_call_now">โทรเลย</a>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 data-i18n="contact_github_label">GitHub</h3>
+                    <p>github.com/Phurin123</p>
+                    <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer" class="contact-btn"
+                        data-i18n="btn_view_github">ดู GitHub</a>
+                </div>
             </div>
         </div>
     </section>

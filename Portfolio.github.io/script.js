@@ -43,8 +43,12 @@ const translations = {
         proj3_title: "Medical Knowledge Chatbot (ML)",
         proj3_desc: "พัฒนาระบบให้คำแนะนำด้านสุขภาพด้วย Machine Learning โมเดล TF-IDF + Logistic Regression Backend ใช้ FastAPI พร้อม endpoint management ระบบติดตาม confidence score และ latency (ms) เพื่อวัดผลได้แม่นยำ ออกแบบ Frontend ด้วย Jinja2 templating พร้อม static assets",
         contact_title: "ร่วมงานกับ<span class='text-accent'>ผม</span>",
-        contact_desc: "สนใจจ้างงาน หรือต้องการสอบถามข้อมูลเพิ่มเติม สามารถติดต่อผมได้ทางช่องทางด้านล่างนี้",
-        btn_email: "อีเมลติดต่อ",
+        contact_email_label: "อีเมล",
+        contact_phone_label: "เบอร์โทรศัพท์",
+        contact_github_label: "GitHub",
+        btn_send_email: "ส่งอีเมล",
+        btn_call_now: "โทรเลย",
+        btn_view_github: "ดู GitHub",
         btn_view_all_projects: "ดูผลงานทั้งหมด",
         nav_certificates: "ใบประกาศ",
         certificates_title: "ใบ",
@@ -102,8 +106,12 @@ const translations = {
         proj3_title: "Medical Knowledge Chatbot (ML)",
         proj3_desc: "A healthcare information system using Machine Learning (TF-IDF + Logistic Regression). Built with FastAPI backend including endpoint management, confidence score and latency tracking. Frontend designed with Jinja2 templating and static assets.",
         contact_title: "Work with <span class='text-accent'>Me</span>",
-        contact_desc: "Interested in hiring me or have any questions? Feel free to reach out via the channels below.",
-        btn_email: "Email Me",
+        contact_email_label: "Email",
+        contact_phone_label: "Phone",
+        contact_github_label: "GitHub",
+        btn_send_email: "Send Email",
+        btn_call_now: "Call Now",
+        btn_view_github: "View GitHub",
         btn_view_all_projects: "View All Projects",
         nav_certificates: "Certificates",
         certificates_title: "My",
@@ -363,29 +371,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 startCustomAutoScroll();
             }, 1500); // Resume after 1.5 seconds of inactivity
         }
-
-        // Mouse wheel scrolling (fast horizontal scroll)
-        skillsSlider.addEventListener('wheel', (e) => {
-            e.preventDefault();
-
-            // Stop custom auto-scroll
-            stopCustomAutoScroll();
-
-            // Pause CSS animation and get current position
-            skillsTrack.style.animationPlayState = 'paused';
-            skillsTrack.style.animation = 'none';
-            skillsTrack.style.transition = '';
-
-            const scrollSpeed = 3;
-            currentTranslate = getCurrentTransform() - (e.deltaY * scrollSpeed);
-
-            // Apply infinite loop wrapping
-            currentTranslate = wrapPosition(currentTranslate);
-
-            skillsTrack.style.transform = `translateX(${currentTranslate}px)`;
-
-            resumeAutoScroll();
-        });
 
         // Drag to scroll functionality
         skillsSlider.addEventListener('mousedown', (e) => {

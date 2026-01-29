@@ -3,7 +3,7 @@
     background: rgba(30, 41, 59, 0.3);
     overflow: hidden;
     /* Prevent horizontal scroll from skewed items if any */
-    padding: 0rem 0;
+    padding: 6rem 0;
 }
 
 #skills .section-title {
