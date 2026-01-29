@@ -1,0 +1,102 @@
+/* Skills Section Styling */
+#skills {
+    background: rgba(30, 41, 59, 0.3);
+    overflow: hidden;
+    /* Prevent horizontal scroll from skewed items if any */
+    padding: 0rem 0;
+}
+
+#skills .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/* Slider Container */
+.skills-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem 0;
+    /* Fade effect on the edges */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.skills-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+    gap: 3rem;
+}
+
+.skills-track:hover {
+    animation-play-state: paused;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    min-width: 120px;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    transition: var(--transition);
+}
+
+.skill-item i {
+    font-size: 3.5rem;
+    transition: var(--transition);
+}
+
+.skill-item span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 20px rgba(88, 166, 255, 0.2);
+}
+
+.skill-item:hover i {
+    transform: scale(1.1);
+}
+
+.skill-item:hover span {
+    color: var(--text-primary);
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 1.5rem));
+        /* Offset by half the track + gap adjustment */
+    }
+}
+
+/* Mobile Adjustments for Slider */
+@media (max-width: 768px) {
+    .skills-track {
+        gap: 2rem;
+        animation-duration: 20s;
+    }
+
+    .skill-item {
+        min-width: 100px;
+        padding: 1rem;
+    }
+
+    .skill-item i {
+        font-size: 2.5rem;
+    }
+}

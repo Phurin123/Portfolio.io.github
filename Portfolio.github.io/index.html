@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="education.css">
+    <link rel="stylesheet" href="skills-section.css">
+    <link rel="stylesheet" href="hero-btns.css">
+    <link rel="stylesheet" href="project-link-temp.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicon for Tech Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">PORTFOLIO<span class="text-accent">.</span></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="nav_home">หน้าแรก</a></li>
+                    <li><a href="#about" data-i18n="nav_about">เกี่ยวกับฉัน</a></li>
+                    <li><a href="#certificates" data-i18n="nav_certificates">ใบประกาศ</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">ผลงาน</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">ติดต่อ</a></li>
+                </ul>
+                <!-- Language Switcher - Separate from nav-links -->
+                <div class="lang-switch">
+                    <button class="lang-btn active" onclick="changeLanguage('th')" id="btn-th">TH</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')" id="btn-en">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-split">
+            <div class="hero-image-side fade-in">
+                <div class="hero-image-wrapper">
+                    <img src="./src/รูปหน้าตรง.jpg" alt="Phurin Sukman" class="hero-profile-img">
+                </div>
+            </div>
+            <div class="hero-content-side fade-in">
+                <h1 data-i18n="hero_title">Phurin Sukman</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">นักศึกษา CS ปี 3 | Web Developer</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary" data-i18n="btn_projects">ดูผลงาน</a>
+                    <a href="./src/Boriwat_Wongtama_Software_Developer_Intern.pdf" class="btn btn-secondary" download
+                        data-i18n="btn_resume">ดาวน์โหลด Resume</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">ติดต่อสอบถาม</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid fade-in">
+                <div class="about-image-wrapper">
+                    <img src="./src/DSC_1197.jpg" alt="About Me" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title"><span data-i18n="about_title">เกี่ยวกับ</span><span class="text-accent"
+                            data-i18n="about_title_accent">ฉัน</span></h2>
+                    <p data-i18n="about_desc1">ผมเป็นนักศึกษาชั้นปีที่ 3 สาขาวิทยาการคอมพิวเตอร์ที่หลงใหลในการพัฒนา
+                        Backend และ ผมสนุกกับการแก้ปัญหาเชิงตรรกะและการทำให้ระบบทำงานอัตโนมัติเพื่อเพิ่มประสิทธิภาพ</p>
+                    <p data-i18n="about_desc2">ผลงานของผมครอบคลุมทั้งแอปพลิเคชันเดสก์ท็อปแบบ GUI และระบบเว็บแบบ
+                        Real-time ตอนนี้กำลังมองหาตำแหน่ง Software Developer Internship
+                        เพื่อพัฒนาทักษะและประสบการณ์จริงในสายงาน</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passion Section -->
+    <section id="passion" class="section">
+        <div class="container">
+            <div class="narrative-content fade-in">
+                <h2 class="section-title"><span data-i18n="passion_title">ความ</span><span class="text-accent"
+                        data-i18n="passion_title_accent">หลงใหล</span></h2>
+                <p class="narrative-text" data-i18n="passion_desc">
+                    นิสัยส่วนตัวผมคือเวลาทำงานอะไร ชอบตั้งคำถามกับตัวเองเสมอว่า 'ทำยังไงให้มันเสร็จเร็วกว่านี้?'
+                    ผมจึงชอบเขียนโค้ดเพื่อสร้างเครื่องมือมาช่วยลดขั้นตอนการทำงานซ้ำซากครับ
+                    เพราะผมเชื่อว่ายิ่งเราให้คอมพิวเตอร์ช่วยทำงานจุกจิกได้มากเท่าไหร่
+                    เราก็ยิ่งมีเวลาไปโฟกัสกับเรื่องที่สำคัญกว่าได้มากขึ้นเท่านั้น
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goal Section -->
+    <section id="goal" class="section">
+        <div class="container">
+            <div class="narrative-content fade-in">
+                <h2 class="section-title"><span data-i18n="goal_title">เป้า</span><span class="text-accent"
+                        data-i18n="goal_title_accent">หมาย</span></h2>
+                <p class="narrative-text" data-i18n="goal_desc">
+                    เป้าหมายตอนนี้ของผม คือการได้เข้าไปฝึกงานในตำแหน่ง Software Developer
+                    กับทีมที่เปิดโอกาสให้ได้ลงมือทำจริงครับ
+                    ผมอยากเอาทักษะที่มีไปช่วยแก้ปัญหาให้ทีม และพร้อมจะเรียนรู้เทคนิคใหม่ๆ จากพี่ๆ มืออาชีพ
+                    เพื่อพัฒนาตัวเองจากนักศึกษาให้กลายเป็นนักพัฒนาที่ทำงานได้จริงครับ
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in"><span data-i18n="skills_title">Technical</span><span class="text-accent">
+                    Skills</span></h2>
+            <div class="skills-slider fade-in">
+                <div class="skills-track">
+                    <!-- Standard Skills Set 1 -->
+                    <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
+                    </div>
+                    <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+                    <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+                    <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-item"><i class="devicon-flask-original"></i><span>Flask</span></div>
+                    <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+                    <div class="skill-item"><i class="devicon-opencv-plain colored"></i><span>OpenCV</span></div>
+                    <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                    <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                    <div class="skill-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                    <div class="skill-item"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+
+                    <!-- Duplicated Set for Seamless Loop -->
+                    <div class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
+                    </div>
+                    <div class="skill-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+                    <div class="skill-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+                    <div class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="skill-item"><i class="devicon-flask-original"></i><span>Flask</span></div>
+                    <div class="skill-item"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+                    <div class="skill-item"><i class="devicon-opencv-plain colored"></i><span>OpenCV</span></div>
+                    <div class="skill-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                    <div class="skill-item"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                    <div class="skill-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                    <div class="skill-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                    <div class="skill-item"><i class="devicon-postman-plain colored"></i><span>Postman</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in"><span data-i18n="education_title">ประวัติการ</span><span
+                    class="text-accent" data-i18n="education_title_accent">ศึกษา</span></h2>
+
+            <div class="education-timeline fade-in">
+                <!-- University -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3 data-i18n="edu_uni_degree">ปริญญาตรี วิทยาศาสตร์บัณฑิต</h3>
+                            <span class="education-date" data-i18n="edu_uni_date">2566 - ปัจจุบัน</span>
+                        </div>
+                        <h4 data-i18n="edu_uni_major">สาขาวิทยาการคอมพิวเตอร์</h4>
+                        <p class="education-institution" data-i18n="edu_uni_faculty">คณะเทคโนโลยีสารสนเทศและการสื่อสาร
+                        </p>
+                        <p class="education-school" data-i18n="edu_uni_school">มหาวิทยาลัยพะเยา</p>
+                        <p class="education-gpa"><span data-i18n="gpa_label">เกรดเฉลี่ยสะสม:</span>
+                            <strong>3.70</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- High School -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <div class="education-header">
+                            <h3 data-i18n="edu_hs_degree">มัธยมศึกษาตอนปลาย</h3>
+                            <span class="education-date" data-i18n="edu_hs_date">2563 - 2566</span>
+                        </div>
+                        <h4 data-i18n="edu_hs_program">สายญี่ปุ่น-อังกฤษ</h4>
+                        <p class="education-school" data-i18n="edu_hs_school">โรงเรียนลำปางกัลยาณี</p>
+                        <p class="education-gpa"><span data-i18n="gpa_label">เกรดเฉลี่ยสะสม:</span>
+                            <strong>2.98</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                ใบ<span class="text-accent">ประกาศนียบัตร</span>
+            </h2>
+
+            <div class="certificates-grid fade-in" id="certificatesGrid">
+                <!-- JS จะ generate ให้เอง -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal for PDF -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-header">
+            <span class="modal-close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <iframe id="pdfViewer" class="modal-pdf-viewer"></iframe>
+            <div id="modalCaption"></div>
+            <div class="modal-actions">
+                <a id="downloadPdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> ดาวน์โหลด PDF
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in"><span data-i18n="projects_title">ผลงาน</span><span class="text-accent"
+                    data-i18n="projects_title_accent">ล่าสุด</span></h2>
+            <div class="projects-grid">
+
+                <!-- Project 1: Inappropriate Content Detection API -->
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <i class="fas fa-shield-alt card-icon"></i>
+                        <h3 data-i18n="proj1_title">Inappropriate Content Detection API</h3>
+                    </div>
+                    <p class="project-desc" data-i18n="proj1_desc">
+                        ระบบตรวจจับเนื้อหาไม่เหมาะสมด้วย YOLO (YOLOv11m, อาร์มส์, บลูร์) ด้วยเทคนิค YOLO*Time
+                        ที่ผมคิดขึ้น
+                        ทำงานแบบ RESTful API บน FastAPI พร้อม Frontend สำหรับทดสอบ ใช้ MongoDB เก็บข้อมูลพร้อม
+                        auto-expire
+                        และมี OCR System สำหรับตรวจสอบข้อความในรูป
+                    </p>
+                    <div class="tech-stack">
+                        <span>YOLOv11m</span>
+                        <span>FastAPI</span>
+                        <span>MongoDB</span>
+                        <span>OCR</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
+                            class="repo-btn">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Project 2: Medical Knowledge Chatbot (Flask) -->
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <i class="fas fa-comments card-icon"></i>
+                        <h3 data-i18n="proj2_title">Medical Knowledge Chatbot (Flask)</h3>
+                    </div>
+                    <p class="project-desc" data-i18n="proj2_desc">
+                        ระบบตอบคำถามด้านสุขภาพแบบ Real-time ที่ออกแบบให้ใช้งานง่ายด้วย HTML, CSS และ JavaScript
+                        พร้อม UI/UX ที่ทันสมัย Backend ใช้ Flask (Python) ร่วมกับ JSON data
+                        และได้ผสาน LangChain กับ OpenRouter API ใช้โมเดล DeepSeek-R1 เพื่อตอบคำถามได้แม่นยำและรวดเร็ว
+                    </p>
+                    <div class="tech-stack">
+                        <span>Flask</span>
+                        <span>LangChain</span>
+                        <span>OpenRouter API</span>
+                        <span>DeepSeek-R1</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
+                            class="repo-btn">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Medical Knowledge Chatbot (ML) -->
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <i class="fas fa-brain card-icon"></i>
+                        <h3 data-i18n="proj3_title">Medical Knowledge Chatbot (ML)</h3>
+                    </div>
+                    <p class="project-desc" data-i18n="proj3_desc">
+                        พัฒนาระบบให้คำแนะนำด้านสุขภาพด้วย Machine Learning โมเดล TF-IDF + Logistic Regression
+                        Backend ใช้ FastAPI พร้อม endpoint management ระบบติดตาม confidence score และ latency (ms)
+                        เพื่อวัดผลได้แม่นยำ ออกแบบ Frontend ด้วย Jinja2 templating พร้อม static assets
+                    </p>
+                    <div class="tech-stack">
+                        <span>FastAPI</span>
+                        <span>TF-IDF</span>
+                        <span>Logistic Regression</span>
+                        <span>Jinja2</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
+                            class="repo-btn">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- View All Projects Button -->
+        <div class="text-center" style="margin-top: 3rem;">
+            <a href="#" class="btn btn-outline" data-i18n="btn_view_all_projects">ดูผลงานทั้งหมด</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container fade-in">
+            <h2 data-i18n="contact_title">ร่วมงานกับ<span class="text-accent">ผม</span></h2>
+            <p data-i18n="contact_desc">สนใจจ้างงาน หรือต้องการสอบถามข้อมูลเพิ่มเติม
+                สามารถติดต่อผมได้ทางช่องทางด้านล่างนี้</p>
+            <a href="mailto:66020981@up.ac.th" class="btn btn-primary" data-i18n="btn_email">อีเมลติดต่อ</a>
+
+            <div class="social-links">
+                <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/boriwat-wongtama-170b373a8/" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Portfolio. The past is experience. <i class="fas fa-heart text-accent"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
