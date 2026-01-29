@@ -247,83 +247,111 @@
         <div class="container">
             <h2 class="section-title fade-in"><span data-i18n="projects_title">ผลงาน</span><span class="text-accent"
                     data-i18n="projects_title_accent">ล่าสุด</span></h2>
-            <div class="projects-grid">
+            <div class="projects-list">
 
                 <!-- Project 1: Inappropriate Content Detection API -->
-                <div class="card fade-in">
-                    <div class="card-header">
-                        <i class="fas fa-shield-alt card-icon"></i>
-                        <h3 data-i18n="proj1_title">Inappropriate Content Detection API</h3>
+                <div class="project-row fade-in">
+                    <div class="project-image">
+                        <img src="./src/projects/project1-placeholder.jpg" alt="Inappropriate Content Detection API">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
                     </div>
-                    <p class="project-desc" data-i18n="proj1_desc">
-                        ระบบตรวจจับเนื้อหาไม่เหมาะสมด้วย YOLO (YOLOv11m, อาร์มส์, บลูร์) ด้วยเทคนิค YOLO*Time
-                        ที่ผมคิดขึ้น
-                        ทำงานแบบ RESTful API บน FastAPI พร้อม Frontend สำหรับทดสอบ ใช้ MongoDB เก็บข้อมูลพร้อม
-                        auto-expire
-                        และมี OCR System สำหรับตรวจสอบข้อความในรูป
-                    </p>
-                    <div class="tech-stack">
-                        <span>YOLOv11m</span>
-                        <span>FastAPI</span>
-                        <span>MongoDB</span>
-                        <span>OCR</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
-                            class="repo-btn">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                    <div class="project-content">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt card-icon"></i>
+                            <h3 data-i18n="proj1_title">Inappropriate Content Detection API</h3>
+                        </div>
+                        <p class="project-desc" data-i18n="proj1_desc">
+                            ระบบตรวจจับเนื้อหาไม่เหมาะสมด้วย YOLO (YOLOv11m, อาร์มส์, บลูร์) ด้วยเทคนิค YOLO*Time
+                            ที่ผมคิดขึ้น
+                            ทำงานแบบ RESTful API บน FastAPI พร้อม Frontend สำหรับทดสอบ ใช้ MongoDB เก็บข้อมูลพร้อม
+                            auto-expire
+                            และมี OCR System สำหรับตรวจสอบข้อความในรูป
+                        </p>
+                        <div class="tech-stack">
+                            <span>YOLOv11m</span>
+                            <span>FastAPI</span>
+                            <span>MongoDB</span>
+                            <span>OCR</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
+                                class="repo-btn">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
 
 
                 <!-- Project 2: Medical Knowledge Chatbot (Flask) -->
-                <div class="card fade-in">
-                    <div class="card-header">
-                        <i class="fas fa-comments card-icon"></i>
-                        <h3 data-i18n="proj2_title">Medical Knowledge Chatbot (Flask)</h3>
+                <div class="project-row fade-in">
+                    <div class="project-image">
+                        <img src="./src/projects/project2-placeholder.jpg" alt="Medical Knowledge Chatbot (Flask)">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
                     </div>
-                    <p class="project-desc" data-i18n="proj2_desc">
-                        ระบบตอบคำถามด้านสุขภาพแบบ Real-time ที่ออกแบบให้ใช้งานง่ายด้วย HTML, CSS และ JavaScript
-                        พร้อม UI/UX ที่ทันสมัย Backend ใช้ Flask (Python) ร่วมกับ JSON data
-                        และได้ผสาน LangChain กับ OpenRouter API ใช้โมเดล DeepSeek-R1 เพื่อตอบคำถามได้แม่นยำและรวดเร็ว
-                    </p>
-                    <div class="tech-stack">
-                        <span>Flask</span>
-                        <span>LangChain</span>
-                        <span>OpenRouter API</span>
-                        <span>DeepSeek-R1</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
-                            class="repo-btn">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                    <div class="project-content">
+                        <div class="card-header">
+                            <i class="fas fa-comments card-icon"></i>
+                            <h3 data-i18n="proj2_title">Medical Knowledge Chatbot (Flask)</h3>
+                        </div>
+                        <p class="project-desc" data-i18n="proj2_desc">
+                            ระบบตอบคำถามด้านสุขภาพแบบ Real-time ที่ออกแบบให้ใช้งานง่ายด้วย HTML, CSS และ JavaScript
+                            พร้อม UI/UX ที่ทันสมัย Backend ใช้ Flask (Python) ร่วมกับ JSON data
+                            และได้ผสาน LangChain กับ OpenRouter API ใช้โมเดล DeepSeek-R1
+                            เพื่อตอบคำถามได้แม่นยำและรวดเร็ว
+                        </p>
+                        <div class="tech-stack">
+                            <span>Flask</span>
+                            <span>LangChain</span>
+                            <span>OpenRouter API</span>
+                            <span>DeepSeek-R1</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
+                                class="repo-btn">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Project 3: Medical Knowledge Chatbot (ML) -->
-                <div class="card fade-in">
-                    <div class="card-header">
-                        <i class="fas fa-brain card-icon"></i>
-                        <h3 data-i18n="proj3_title">Medical Knowledge Chatbot (ML)</h3>
+                <div class="project-row fade-in">
+                    <div class="project-image">
+                        <img src="./src/projects/project3-placeholder.jpg" alt="Medical Knowledge Chatbot (ML)">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
                     </div>
-                    <p class="project-desc" data-i18n="proj3_desc">
-                        พัฒนาระบบให้คำแนะนำด้านสุขภาพด้วย Machine Learning โมเดล TF-IDF + Logistic Regression
-                        Backend ใช้ FastAPI พร้อม endpoint management ระบบติดตาม confidence score และ latency (ms)
-                        เพื่อวัดผลได้แม่นยำ ออกแบบ Frontend ด้วย Jinja2 templating พร้อม static assets
-                    </p>
-                    <div class="tech-stack">
-                        <span>FastAPI</span>
-                        <span>TF-IDF</span>
-                        <span>Logistic Regression</span>
-                        <span>Jinja2</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
-                            class="repo-btn">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
+                    <div class="project-content">
+                        <div class="card-header">
+                            <i class="fas fa-brain card-icon"></i>
+                            <h3 data-i18n="proj3_title">Medical Knowledge Chatbot (ML)</h3>
+                        </div>
+                        <p class="project-desc" data-i18n="proj3_desc">
+                            พัฒนาระบบให้คำแนะนำด้านสุขภาพด้วย Machine Learning โมเดล TF-IDF + Logistic Regression
+                            Backend ใช้ FastAPI พร้อม endpoint management ระบบติดตาม confidence score และ latency (ms)
+                            เพื่อวัดผลได้แม่นยำ ออกแบบ Frontend ด้วย Jinja2 templating พร้อม static assets
+                        </p>
+                        <div class="tech-stack">
+                            <span>FastAPI</span>
+                            <span>TF-IDF</span>
+                            <span>Logistic Regression</span>
+                            <span>Jinja2</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
+                                class="repo-btn">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
 

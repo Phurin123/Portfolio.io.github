@@ -393,14 +393,120 @@ nav {
     text-align: left;
 }
 
-/* Projects Section */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+/* Projects Section - Row Based Layout */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     margin-top: 3rem;
 }
 
+.project-row {
+    display: flex;
+    gap: 2.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+/* Subtle gradient border effect on hover */
+.project-row::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(45deg, transparent, rgba(88, 166, 255, 0.3), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.project-row:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(88, 166, 255, 0.1);
+}
+
+/* Project Image Container */
+.project-image {
+    flex: 0 0 40%;
+    position: relative;
+    min-height: 300px;
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.05), rgba(147, 112, 219, 0.05));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+    opacity: 0;
+    /* Hide until image loads */
+}
+
+.project-image img[src*=".jpg"],
+.project-image img[src*=".png"],
+.project-image img[src*=".webp"] {
+    opacity: 1;
+    /* Show when valid image */
+}
+
+.project-row:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Image Placeholder (shown when no image) */
+.image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.08), rgba(147, 112, 219, 0.08));
+    border-right: 1px solid var(--border-color);
+}
+
+.image-placeholder i {
+    font-size: 4rem;
+    color: var(--accent-color);
+    opacity: 0.3;
+}
+
+.image-placeholder span {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    opacity: 0.5;
+}
+
+/* Project Content Container */
+.project-content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Keep existing card styles for backward compatibility */
 .card,
 .project-card {
     background: var(--card-bg);
@@ -412,11 +518,9 @@ nav {
     display: flex;
     flex-direction: column;
     backdrop-filter: blur(10px);
-    /* Glassmorphism on cards */
     position: relative;
 }
 
-/* Subtle gradient border effect on hover */
 .card::before {
     content: '';
     position: absolute;
@@ -459,7 +563,8 @@ nav {
 .project-links {
     display: flex;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: auto;
+    /* Push to bottom */
     padding-top: 1.5rem;
     border-top: 1px solid var(--border-color);
 }
@@ -512,6 +617,30 @@ nav {
     padding: 10px;
     border-radius: 12px;
 }
+
+.project-desc {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.tech-stack span {
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.15), rgba(147, 112, 219, 0.1));
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(88, 166, 255, 0.25);
+    font-weight: 500;
+}
+
 
 /* Skills Section */
 .skills-section {
@@ -1083,5 +1212,34 @@ footer {
     .section-title::after {
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    /* Projects - Mobile Responsive */
+    .project-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .project-image {
+        flex: none;
+        width: 100%;
+        min-height: 250px;
+    }
+
+    .image-placeholder {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .project-content {
+        padding: 1.5rem;
+    }
+
+    .card-header h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-desc {
+        font-size: 0.95rem;
     }
 }
