@@ -373,6 +373,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Certificates Grid (Clean Version)
     // ===============================
     const certificateFiles = [{
+            file: "certificate_dapp_66020981.png",
+            title: "JavaScript"
+        },
+        {
             file: "Screenshot_2026-01-29_135240.png",
             title: "ทักษะการเขียนโปรแกรมคอมพิวเตอร์ด้วยภาษาซี"
         },
@@ -478,7 +482,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             file: "Screenshot_2026-01-29_135620.png",
-            title: "Learn-AI AI104 - การประยุกต์ใช้ปัญญาประดิษฐ์ขั้นสูง"
+            title: "การประยุกต์ใช้ปัญญาประดิษฐ์ขั้นสูง"
         },
         {
             file: "Screenshot_2026-01-29_135906.png",
@@ -522,7 +526,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             file: "Screenshot_2026-01-30_141310.png",
-            title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์ (ม.ขอนแก่น)"
+            title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์"
         },
         {
             file: "Screenshot_2026-01-30_141320.png",
@@ -546,7 +550,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             file: "Screenshot_2026-01-30_141525.png",
-            title: "ทักษะคอมพิวเตอร์และเทคโนโลยีสารสนเทศและการสื่อสาร (ม.ขอนแก่น)"
+            title: "ทักษะคอมพิวเตอร์และเทคโนโลยีสารสนเทศและการสื่อสาร"
         },
         {
             file: "Screenshot_2026-01-30_141542.png",
