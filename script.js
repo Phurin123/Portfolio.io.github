@@ -1,4 +1,3 @@
-<!-- ไฟล์นี้ควรเป็น .js หรืออยู่ใน <script> ใน HTML -->
 // Translations Dictionary
 const translations = {
     th: {
@@ -54,78 +53,77 @@ const translations = {
         nav_certificates: "ใบประกาศ",
         certificates_title: "ใบ",
         certificates_title_accent: "ประกาศนียบัตร",
-        cert1_title: "ชื่อใบประกาศนียบัตร 1",
-        cert1_issuer: "หน่วยงานที่ออกใบประกาศ",
-        cert1_date: "มกราคม 2024",
-        cert2_title: "ชื่อใบประกาศนียบัตร 2",
-        cert2_issuer: "หน่วยงานที่ออกใบประกาศ",
-        cert2_date: "กุมภาพันธ์ 2024",
-        cert3_title: "ชื่อใบประกาศนียบัตร 3",
-        cert3_issuer: "หน่วยงานที่ออกใบประกาศ",
-        cert3_date: "มีนาคม 2024"
+
     },
     en: {
         nav_home: "Home",
-        nav_about: "About",
+        nav_about: "About Me",
         nav_projects: "Projects",
         nav_contact: "Contact",
-        hero_greeting: "Hello, I am",
+
+        hero_greeting: "Hello, my name is",
         hero_title: "Phurin Sukman",
-        hero_subtitle: "3rd Year CS Student | Web Developer",
+        hero_subtitle: "3rd Year CS Student | Full Stack Developer",
+
         btn_projects: "View Projects",
         btn_resume: "Download Resume",
         btn_contact: "Contact Me",
+
         about_title: "About",
         about_title_accent: "Me",
-        about_desc1: "I'm a third-year Computer Science student passionate about Web Development. I love building seamless systems that work across both Frontend and Backend.",
-        about_desc2: "I have experience developing Python APIs with Flask and FastAPI, working with MongoDB, and integrating Machine Learning technologies like YOLO into web systems. Currently seeking a Software Developer Internship to enhance my skills and gain hands-on experience in the industry.",
-        passion_title: "The",
+        about_desc1: "I am a third-year Computer Science student with a strong interest in Full-Stack Web Development. I enjoy designing and developing systems that seamlessly integrate both Frontend and Backend to work efficiently together.",
+        about_desc2: "I have experience developing Python APIs using Flask and FastAPI, working with MongoDB, and integrating Machine Learning technologies such as YOLO into web-based systems. I am currently seeking a Full-Stack Web Development Internship to further develop my skills and gain real-world experience.",
+
+        passion_title: "My",
         passion_title_accent: "Passion",
-        passion_desc: "My personal habit whenever I work on something is to always ask myself, 'How can I finish this faster?' That's why I love writing code to build tools that automate repetitive tasks. I believe the more we let computers handle the tedious stuff, the more time we have to focus on what truly matters.",
-        goal_title: "The",
+        passion_desc: "Whenever I work on something, I always ask myself, 'How can I finish this faster?' This mindset drives me to write code that automates repetitive tasks. I believe the more we let computers handle routine work, the more time we can focus on what truly matters.",
+
+        goal_title: "My",
         goal_title_accent: "Goal",
-        goal_desc: "My current goal is to land a Software Developer internship with a team that gives me real hands-on opportunities. I want to use my skills to help solve real problems and learn new techniques from experienced professionals, evolving from a student into a developer who can actually deliver in the real world.",
+        goal_desc: "My current goal is to secure a Full-Stack Web Development internship with a team that offers hands-on experience. I want to apply my existing skills to help solve real problems while learning new techniques from experienced developers, growing from a student into a professional software developer.",
+
         skills_title: "Technical ",
+
         education_title: "Educational",
         education_title_accent: "Background",
         edu_uni_degree: "Bachelor of Science",
         edu_uni_major: "Computer Science",
-        edu_uni_faculty: "Faculty of Information Technology and Communication",
+        edu_uni_faculty: "Faculty of Information and Communication Technology",
         edu_uni_school: "University of Phayao",
         edu_uni_date: "2023 - Present",
-        edu_hs_degree: "High School Diploma",
-        edu_hs_program: "Japanese-English Program",
-        edu_hs_school: "Lampang Kanlayanee School",
+
+        edu_hs_degree: "High School",
+        edu_hs_program: "Korean-English Program",
+        edu_hs_school: "Chakkham Khanathon School, Lamphun",
         edu_hs_date: "2020 - 2023",
-        gpa_label: "GPA:",
-        projects_title: "Featured",
+
+        gpa_label: "Cumulative GPA:",
+
+        projects_title: "Latest",
         projects_title_accent: "Projects",
+
         proj1_title: "Inappropriate Content Detection API",
-        proj1_desc: "A content moderation system powered by YOLO (YOLOv11m, arms, blur) using my custom YOLO*Time technique. Built as a RESTful API with FastAPI, includes a testing Frontend, uses MongoDB with auto-expire, and has an OCR System for text detection in images.",
+        proj1_desc: "An inappropriate content detection system developed using a self-trained YOLOv11m model. It supports both image and video analysis, automatically displays bounding boxes, and applies blur to detected content. The system is built as a RESTful API using FastAPI, includes a web interface for uploading and testing, uses MongoDB with auto-expire for data management, and integrates an OCR system for Thai payment slip verification to unlock API key access.",
+
         proj2_title: "Medical Knowledge Chatbot",
-        proj2_desc: "A real-time healthcare FAQ chatbot with modern UI/UX design using HTML, CSS, and JavaScript. Backend built with Flask (Python) and JSON data, integrated with LangChain and OpenRouter API using DeepSeek-R1 model for accurate and fast responses.",
-        proj3_title: "Medical Knowledge Chatbot (ML)",
-        proj3_desc: "A healthcare information system using Machine Learning (TF-IDF + Logistic Regression). Built with FastAPI backend including endpoint management, confidence score and latency tracking. Frontend designed with Jinja2 templating and static assets.",
+        proj2_desc: "A real-time medical Q&A chatbot designed with a clean and modern UI using HTML, CSS, and JavaScript. The backend is built with Flask (Python) and JSON-based data, integrated with LangChain and the OpenRouter API using the DeepSeek-R1 model for accurate and fast responses.",
+
+        proj3_title: "Thai Sentiment Analysis System Using TF-IDF",
+        proj3_desc: "A Thai sentiment analysis web application developed using Machine Learning techniques, combining TF-IDF with Logistic Regression. The system includes a FastAPI-based backend for real-time predictions, displaying confidence scores, latency (in milliseconds), and model version information. The frontend is built using Jinja2 templating and static assets, allowing users to conveniently test the system via a web browser.",
+
         contact_title: "Work with <span class='text-accent'>Me</span>",
         contact_email_label: "Email",
         contact_phone_label: "Phone",
         contact_github_label: "GitHub",
+
         btn_send_email: "Send Email",
         btn_call_now: "Call Now",
         btn_view_github: "View GitHub",
         btn_view_all_projects: "View All Projects",
+
         nav_certificates: "Certificates",
         certificates_title: "My",
-        certificates_title_accent: "Certificates",
-        cert1_title: "Certificate Name 1",
-        cert1_issuer: "Issuing Organization",
-        cert1_date: "January 2024",
-        cert2_title: "Certificate Name 2",
-        cert2_issuer: "Issuing Organization",
-        cert2_date: "February 2024",
-        cert3_title: "Certificate Name 3",
-        cert3_issuer: "Issuing Organization",
-        cert3_date: "March 2024"
+        certificates_title_accent: "Certificates"
     }
 };
 
