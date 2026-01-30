@@ -41,7 +41,7 @@ const translations = {
         proj1_desc: "พัฒนาระบบตรวจจับเนื้อหาไม่เหมาะสมด้วยโมเดล YOLOv11m ที่เทรนเอง รองรับภาพและวิดีโอ พร้อมแสดง bounding box และ blur อัตโนมัติ ทำงานผ่าน RESTful API บน FastAPI มีหน้าเว็บสำหรับอัปโหลดและทดสอบระบบ ใช้ MongoDB จัดเก็บข้อมูลพร้อม auto-expire และมี OCR สำหรับตรวจสอบสลิปโอนเงินภาษาไทย เพื่อปลดล็อกการใช้งาน APIkey",
         proj2_title: "Medical Knowledge Chatbot",
         proj2_desc: "ระบบตอบคำถามด้านสุขภาพแบบ Real-time ที่ออกแบบให้ใช้งานง่ายด้วย HTML, CSS และ JavaScript พร้อม UI/UX ที่ทันสมัย Backend ใช้ Flask (Python) ร่วมกับ JSON data และได้ผสาน LangChain กับ OpenRouter API ใช้โมเดล DeepSeek-R1 เพื่อตอบคำถามได้แม่นยำและรวดเร็ว",
-        proj3_title: "Thai-Sentiment-Analysis-System-Using-TF-IDF",
+        proj3_title: "Thai Sentiment Analysis System Using TF IDF",
         proj3_desc: "พัฒนาเว็บแอปพลิเคชันวิเคราะห์ความรู้สึกจากข้อความภาษาไทยด้วยเทคนิค Machine Learning โดยใช้โมเดล TF-IDF ร่วมกับ Logistic Regression พร้อมออกแบบและพัฒนา API ด้วย FastAPI สำหรับการทำนายผลแบบเรียลไทม์ ระบบสามารถคำนวณและแสดงค่า confidence score, latency (มิลลิวินาที) และเวอร์ชันของโมเดล เพื่อสนับสนุนการประเมินประสิทธิภาพเชิงเทคนิคของระบบ พร้อมทั้งออกแบบส่วนติดต่อผู้ใช้ด้วย Jinja2 templating และ static assets เพื่อให้สามารถทดสอบการทำงานผ่านเว็บเบราว์เซอร์ได้อย่างสะดวก",
         contact_title: "ร่วมงานกับ<span class='text-accent'>ผม</span>",
         contact_email_label: "อีเมล",
