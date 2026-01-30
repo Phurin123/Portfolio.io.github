@@ -64,8 +64,12 @@
                 <p class="hero-subtitle" data-i18n="hero_subtitle">นักศึกษา CS ปี 3 | Web Developer</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn btn-primary" data-i18n="btn_projects">ดูผลงาน</a>
-                    <a href="./src/Boriwat_Wongtama_Software_Developer_Intern.pdf" class="btn btn-secondary" download
-                        data-i18n="btn_resume">ดาวน์โหลด Resume</a>
+                    <a href="./src/Resume/Resume_phurin.pdf"
+                    class="btn btn-secondary"
+                    target="_blank"
+                    data-i18n="btn_resume">
+                    ดาวน์โหลด Resume
+                    </a>
                     <a href="#contact" class="btn btn-outline" data-i18n="btn_contact">ติดต่อสอบถาม</a>
                 </div>
             </div>
@@ -77,7 +81,7 @@
         <div class="container">
             <div class="about-grid fade-in">
                 <div class="about-image-wrapper">
-                    <img src="./src/DSC_1197.jpg" alt="About Me" class="about-img">
+                    <img src="./src/about-me.jpg" alt="About Me" class="about-img">
                 </div>
                 <div class="about-text">
                     <h2 class="section-title"><span data-i18n="about_title">เกี่ยวกับ</span><span class="text-accent"
@@ -205,7 +209,7 @@
                         <h4 data-i18n="edu_hs_program">สายญี่ปุ่น-อังกฤษ</h4>
                         <p class="education-school" data-i18n="edu_hs_school">โรงเรียนลำปางกัลยาณี</p>
                         <p class="education-gpa"><span data-i18n="gpa_label">เกรดเฉลี่ยสะสม:</span>
-                            <strong>2.98</strong>
+                            <strong>3.96</strong>
                         </p>
                     </div>
                 </div>
@@ -232,11 +236,12 @@
             <span class="modal-close">&times;</span>
         </div>
         <div class="modal-body">
+            <img id="modalImage" class="modal-image" style="display:none; max-width:90%; max-height:85vh; object-fit:contain; margin:auto;" alt="Certificate Image">
             <iframe id="pdfViewer" class="modal-pdf-viewer"></iframe>
             <div id="modalCaption"></div>
             <div class="modal-actions">
                 <a id="downloadPdf" class="btn btn-primary" download>
-                    <i class="fas fa-download"></i> ดาวน์โหลด PDF
+                    <i class="fas fa-download"></i> ดาวน์โหลด
                 </a>
             </div>
         </div>
@@ -277,7 +282,7 @@
                             <span>OCR</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
+                            <a href="https://github.com/Phurin123/Project-Api-detect_inappropriate-main" target="_blank" rel="noopener noreferrer"
                                 class="repo-btn">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
@@ -289,7 +294,7 @@
                 <!-- Project 2: Medical Knowledge Chatbot (Flask) -->
                 <div class="project-row fade-in">
                     <div class="project-image">
-                        <img src="./src/projects/project2-placeholder.jpg" alt="Medical Knowledge Chatbot (Flask)">
+                        <img src="./src/projects/project2-placeholder.jpg" alt="Medical Knowledge Chatbot">
                         <div class="image-placeholder">
                             <i class="fas fa-image"></i>
                             <span>Project Screenshot</span>
@@ -313,7 +318,7 @@
                             <span>DeepSeek-R1</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Phurin123" target="_blank" rel="noopener noreferrer"
+                            <a href="https://github.com/Phurin123/Medical-Knowledge-Chatbot" target="_blank" rel="noopener noreferrer"
                                 class="repo-btn">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
@@ -324,7 +329,8 @@
                 <!-- Project 3: Medical Knowledge Chatbot (ML) -->
                 <div class="project-row fade-in">
                     <div class="project-image">
-                        <img src="./src/projects/project3-placeholder.jpg" alt="Medical Knowledge Chatbot (ML)">
+                        <img src="./src/projects/project3-placeholder.jpg" alt="Owner avatar
+Thai-Sentiment-Analysis-System-Using-TF-IDF">
                         <div class="image-placeholder">
                             <i class="fas fa-image"></i>
                             <span>Project Screenshot</span>
@@ -336,9 +342,7 @@
                             <h3 data-i18n="proj3_title">Medical Knowledge Chatbot (ML)</h3>
                         </div>
                         <p class="project-desc" data-i18n="proj3_desc">
-                            พัฒนาระบบให้คำแนะนำด้านสุขภาพด้วย Machine Learning โมเดล TF-IDF + Logistic Regression
-                            Backend ใช้ FastAPI พร้อม endpoint management ระบบติดตาม confidence score และ latency (ms)
-                            เพื่อวัดผลได้แม่นยำ ออกแบบ Frontend ด้วย Jinja2 templating พร้อม static assets
+                           พัฒนาเว็บแอปพลิเคชันวิเคราะห์ความรู้สึกจากข้อความภาษาไทยด้วยเทคนิค Machine Learning โดยใช้โมเดล TF-IDF ร่วมกับ Logistic Regression พร้อมออกแบบและพัฒนา API ด้วย FastAPI สำหรับการทำนายผลแบบเรียลไทม์ ระบบสามารถคำนวณและแสดงค่า confidence score, latency (มิลลิวินาที) และเวอร์ชันของโมเดล เพื่อสนับสนุนการประเมินประสิทธิภาพเชิงเทคนิคของระบบ พร้อมทั้งออกแบบส่วนติดต่อผู้ใช้ด้วย Jinja2 templating และ static assets เพื่อให้สามารถทดสอบการทำงานผ่านเว็บเบราว์เซอร์ได้อย่างสะดวก
                         </p>
                         <div class="tech-stack">
                             <span>FastAPI</span>
@@ -360,8 +364,17 @@
 
         <!-- View All Projects Button -->
         <div class="text-center" style="margin-top: 3rem;">
-            <a href="#" class="btn btn-outline" data-i18n="btn_view_all_projects">ดูผลงานทั้งหมด</a>
-        </div>
+  <a
+    href="https://github.com/Phurin123"
+    class="btn btn-outline"
+    target="_blank"
+    rel="noopener noreferrer"
+    data-i18n="btn_view_all_projects"
+  >
+    ดูผลงานทั้งหมด
+  </a>
+</div>
+
         </div>
     </section>
 

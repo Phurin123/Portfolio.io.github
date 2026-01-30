@@ -1,3 +1,4 @@
+<!-- ไฟล์นี้ควรเป็น .js หรืออยู่ใน <script> ใน HTML -->
 // Translations Dictionary
 const translations = {
     th: {
@@ -7,20 +8,20 @@ const translations = {
         nav_contact: "ติดต่อ",
         hero_greeting: "สวัสดีครับ, ผมชื่อ",
         hero_title: "ภูรินทร์ สุขมั่น",
-        hero_subtitle: "นักศึกษา CS ปี 3 | Web Developer",
+        hero_subtitle: "นักศึกษา CS ปี 3 | Full Stack Developer",
         btn_projects: "ดูผลงาน",
         btn_resume: "ดาวน์โหลด Resume",
         btn_contact: "ติดต่อสอบถาม",
         about_title: "เกี่ยวกับ",
         about_title_accent: "ฉัน",
-        about_desc1: "ผมเป็นนักศึกษาชั้นปีที่ 3 สาขาวิทยาการคอมพิวเตอร์ที่หลงใหลในการพัฒนาเว็บไซต์ (Web Development) และสนุกกับการสร้างระบบทั้ง Frontend และ Backend ที่ทำงานร่วมกันได้อย่างราบรื่น",
-        about_desc2: "ผมมีประสบการณ์ในการพัฒนา Python API ด้วย Flask และ FastAPI รวมถึงการทำงานกับ MongoDB และการผสานเทคโนโลยี Machine Learning อย่าง YOLO เข้ากับระบบเว็บ ตอนนี้กำลังมองหาตำแหน่ง Software Developer Internship เพื่อพัฒนาทักษะและประสบการณ์จริงในสายงาน",
+        about_desc1: "ผมเป็นนักศึกษาชั้นปีที่ 3 สาขาวิทยาการคอมพิวเตอร์ที่สนใจด้าน    Full-Stack Web Development และมีความสนุกกับการออกแบบและพัฒนาระบบที่ครอบคลุมทั้งฝั่ง Frontend และ Backend ให้สามารถทำงานร่วมกันได้อย่างมีประสิทธิภาพ",
+        about_desc2: "ผมมีประสบการณ์ในการพัฒนา Python API ด้วย Flask และ FastAPI รวมถึงการทำงานกับ MongoDB และการผสานเทคโนโลยี Machine Learning อย่าง YOLO เข้ากับระบบเว็บ ตอนนี้กำลังมองหาตำแหน่ง Full-Stack Web Development Internship เพื่อพัฒนาทักษะและประสบการณ์จริงในสายงาน",
         passion_title: "แรง",
         passion_title_accent: "บันดาลใจ",
         passion_desc: "นิสัยส่วนตัวผมคือเวลาทำงานอะไร ชอบตั้งคำถามกับตัวเองเสมอว่า 'ทำยังไงให้มันเสร็จเร็วกว่านี้?' ผมจึงชอบเขียนโค้ดเพื่อสร้างเครื่องมือมาช่วยลดขั้นตอนการทำงานซ้ำซากครับ เพราะผมเชื่อว่ายิ่งเราให้คอมพิวเตอร์ช่วยทำงานจุกจิกได้มากเท่าไหร่ เราก็ยิ่งมีเวลาไปโฟกัสกับเรื่องที่สำคัญกว่าได้มากขึ้นเท่านั้น",
         goal_title: "เป้า",
         goal_title_accent: "หมาย",
-        goal_desc: "เป้าหมายตอนนี้ของผม คือการได้เข้าไปฝึกงานในตำแหน่ง Software Developer กับทีมที่เปิดโอกาสให้ได้ลงมือทำจริงครับ ผมอยากเอาทักษะที่มีไปช่วยแก้ปัญหาให้ทีม และพร้อมจะเรียนรู้เทคนิคใหม่ๆ จากพี่ๆ มืออาชีพ เพื่อพัฒนาตัวเองจากนักศึกษาให้กลายเป็นนักพัฒนาที่ทำงานได้จริงครับ",
+        goal_desc: "เป้าหมายตอนนี้ของผม คือการได้เข้าไปฝึกงานในตำแหน่ง Full-Stack Web Development กับทีมที่เปิดโอกาสให้ได้ลงมือทำจริงครับ ผมอยากเอาทักษะที่มีไปช่วยแก้ปัญหาให้ทีม และพร้อมจะเรียนรู้เทคนิคใหม่ๆ จากพี่ๆ มืออาชีพ เพื่อพัฒนาตัวเองจากนักศึกษาให้กลายเป็นนักพัฒนาที่ทำงานได้จริงครับ",
         skills_title: "Technical ",
         education_title: "ประวัติการ",
         education_title_accent: "ศึกษา",
@@ -37,11 +38,11 @@ const translations = {
         projects_title: "ผลงาน",
         projects_title_accent: "ล่าสุด",
         proj1_title: "Inappropriate Content Detection API",
-        proj1_desc: "ระบบตรวจจับเนื้อหาไม่เหมาะสมด้วย YOLO (YOLOv11m, อาร์มส์, บลูร์) ด้วยเทคนิค YOLO*Time ที่ผมคิดขึ้น ทำงานแบบ RESTful API บน FastAPI พร้อม Frontend สำหรับทดสอบ ใช้ MongoDB เก็บข้อมูลพร้อม auto-expire และมี OCR System สำหรับตรวจสอบข้อความในรูป",
-        proj2_title: "Medical Knowledge Chatbot (Flask)",
+        proj1_desc: "พัฒนาระบบตรวจจับเนื้อหาไม่เหมาะสมด้วยโมเดล YOLOv11m ที่เทรนเอง รองรับภาพและวิดีโอ พร้อมแสดง bounding box และ blur อัตโนมัติ ทำงานผ่าน RESTful API บน FastAPI มีหน้าเว็บสำหรับอัปโหลดและทดสอบระบบ ใช้ MongoDB จัดเก็บข้อมูลพร้อม auto-expire และมี OCR สำหรับตรวจสอบสลิปโอนเงินภาษาไทย เพื่อปลดล็อกการใช้งาน APIkey",
+        proj2_title: "Medical Knowledge Chatbot",
         proj2_desc: "ระบบตอบคำถามด้านสุขภาพแบบ Real-time ที่ออกแบบให้ใช้งานง่ายด้วย HTML, CSS และ JavaScript พร้อม UI/UX ที่ทันสมัย Backend ใช้ Flask (Python) ร่วมกับ JSON data และได้ผสาน LangChain กับ OpenRouter API ใช้โมเดล DeepSeek-R1 เพื่อตอบคำถามได้แม่นยำและรวดเร็ว",
-        proj3_title: "Medical Knowledge Chatbot (ML)",
-        proj3_desc: "พัฒนาระบบให้คำแนะนำด้านสุขภาพด้วย Machine Learning โมเดล TF-IDF + Logistic Regression Backend ใช้ FastAPI พร้อม endpoint management ระบบติดตาม confidence score และ latency (ms) เพื่อวัดผลได้แม่นยำ ออกแบบ Frontend ด้วย Jinja2 templating พร้อม static assets",
+        proj3_title: "Thai-Sentiment-Analysis-System-Using-TF-IDF",
+        proj3_desc: "พัฒนาเว็บแอปพลิเคชันวิเคราะห์ความรู้สึกจากข้อความภาษาไทยด้วยเทคนิค Machine Learning โดยใช้โมเดล TF-IDF ร่วมกับ Logistic Regression พร้อมออกแบบและพัฒนา API ด้วย FastAPI สำหรับการทำนายผลแบบเรียลไทม์ ระบบสามารถคำนวณและแสดงค่า confidence score, latency (มิลลิวินาที) และเวอร์ชันของโมเดล เพื่อสนับสนุนการประเมินประสิทธิภาพเชิงเทคนิคของระบบ พร้อมทั้งออกแบบส่วนติดต่อผู้ใช้ด้วย Jinja2 templating และ static assets เพื่อให้สามารถทดสอบการทำงานผ่านเว็บเบราว์เซอร์ได้อย่างสะดวก",
         contact_title: "ร่วมงานกับ<span class='text-accent'>ผม</span>",
         contact_email_label: "อีเมล",
         contact_phone_label: "เบอร์โทรศัพท์",
@@ -101,7 +102,7 @@ const translations = {
         projects_title_accent: "Projects",
         proj1_title: "Inappropriate Content Detection API",
         proj1_desc: "A content moderation system powered by YOLO (YOLOv11m, arms, blur) using my custom YOLO*Time technique. Built as a RESTful API with FastAPI, includes a testing Frontend, uses MongoDB with auto-expire, and has an OCR System for text detection in images.",
-        proj2_title: "Medical Knowledge Chatbot (Flask)",
+        proj2_title: "Medical Knowledge Chatbot",
         proj2_desc: "A real-time healthcare FAQ chatbot with modern UI/UX design using HTML, CSS, and JavaScript. Backend built with Flask (Python) and JSON data, integrated with LangChain and OpenRouter API using DeepSeek-R1 model for accurate and fast responses.",
         proj3_title: "Medical Knowledge Chatbot (ML)",
         proj3_desc: "A healthcare information system using Machine Learning (TF-IDF + Logistic Regression). Built with FastAPI backend including endpoint management, confidence score and latency tracking. Frontend designed with Jinja2 templating and static assets.",
@@ -133,15 +134,12 @@ let currentLang = 'th';
 function changeLanguage(lang) {
     currentLang = lang;
 
-    // Update active button state
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
     document.getElementById(`btn-${lang}`).classList.add('active');
 
-    // Update text content
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
         if (translations[lang][key]) {
-            // Check if content contains HTML tags (like <span class='text-accent'>)
             if (translations[lang][key].includes('<')) {
                 element.innerHTML = translations[lang][key];
             } else {
@@ -150,8 +148,39 @@ function changeLanguage(lang) {
         }
     });
 
-    // Save preference to localStorage
     localStorage.setItem('preferredLanguage', lang);
+}
+
+// ===============================
+// Certificate Modal Functions
+// ===============================
+function openImageModal(imageSrc, title) {
+    const modal = document.getElementById('certificateModal');
+    const modalBody = document.querySelector('.modal-body');
+    const modalCaption = document.getElementById('modalCaption');
+    const downloadBtn = document.getElementById('downloadPdf');
+
+    // Clear previous content
+    modalBody.innerHTML = '';
+
+    // Create image
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.alt = title;
+    img.style.cssText = 'max-width: 90%; max-height: 85vh; object-fit: contain; display: block; margin: 0 auto;';
+    img.className = 'modal-image';
+
+    modalBody.appendChild(img);
+    modalCaption.textContent = title;
+
+    // Update download button
+    if (downloadBtn) {
+        downloadBtn.href = imageSrc;
+        downloadBtn.download = imageSrc.split('/').pop();
+        downloadBtn.innerHTML = '<i class="fas fa-download"></i> ' + (currentLang === 'th' ? 'ดาวน์โหลดรูปภาพ' : 'Download Image');
+    }
+
+    modal.style.display = 'flex';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -162,196 +191,127 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
-
-    if (mobileMenuBtn) {
+    if (mobileMenuBtn && navLinks) {
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             const icon = mobileMenuBtn.querySelector('i');
-            if (navLinks.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
+            if (icon) {
+                icon.classList.toggle('fa-bars');
+                icon.classList.toggle('fa-times');
             }
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon) {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
         });
     }
 
-    // Close mobile menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            const icon = mobileMenuBtn.querySelector('i');
-            if (icon) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
-    });
-
-    // 3. Scroll Animation (Intersection Observer)
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
+    // 3. Scroll Animation
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Only animate once
+                observer.unobserve(entry.target);
             }
         });
-    }, observerOptions);
+    }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    });
 
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach(el => observer.observe(el));
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // 4. Custom Smooth Scroll (Better than CSS)
+    // 4. Smooth Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-
+            if (targetId === '#' || !targetId) return;
             const targetElement = document.querySelector(targetId);
             if (!targetElement) return;
 
-            // Get target position with offset for fixed header
-            const headerHeight = 80; // match --header-height
-            const extraOffset = 20; // extra spacing
+            const headerHeight = 80;
+            const extraOffset = 20;
             const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - extraOffset;
-
-            // Smooth scroll with custom easing
-            smoothScrollTo(targetPosition, 800); // 800ms duration
+            smoothScrollTo(targetPosition, 800);
         });
     });
 
-    // 5. Certificate Modal Functionality for PDF
+    // 5. Close Modal
     const modal = document.getElementById('certificateModal');
-    const pdfViewer = document.getElementById('pdfViewer');
-    const modalCaption = document.getElementById('modalCaption');
-    const downloadBtn = document.getElementById('downloadPdf');
     const closeBtn = document.querySelector('.modal-close');
-
-    // Add click event to all certificate cards
-    document.querySelectorAll('.certificate-card').forEach(card => {
-        card.addEventListener('click', function () {
-            const pdfPath = this.getAttribute('data-pdf');
-            if (!pdfPath) return;
-
-            // 👉 ดึงชื่อไฟล์จาก path
-            const fileName = pdfPath.split('/').pop().replace('.pdf', '');
-
-            // 👉 แปลงชื่อให้อ่านง่าย
-            const displayName = fileName
-                .replace(/[_-]/g, ' ')
-                .replace(/\b\w/g, c => c.toUpperCase());
-
-            modal.style.display = 'block';
-            pdfViewer.src = pdfPath;
-            modalCaption.textContent = displayName;
-
-            downloadBtn.href = pdfPath;
-            downloadBtn.download = fileName + '.pdf';
-        });
-    });
-
-    // Close modal when clicking the X
-    if (closeBtn) {
-        closeBtn.addEventListener('click', function () {
+    if (modal && closeBtn) {
+        const closeModal = () => {
             modal.style.display = 'none';
-            pdfViewer.src = ''; // Clear iframe
+        };
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
         });
     }
 
-    // Close modal when clicking outside the content
-    modal.addEventListener('click', function (e) {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-            pdfViewer.src = ''; // Clear iframe
-        }
-    });
-
-    // Close modal with Escape key
-    document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && modal.style.display === 'block') {
-            modal.style.display = 'none';
-            pdfViewer.src = ''; // Clear iframe
-        }
-    });
-
-    // 6. Skills Slider - Mouse Wheel & Drag Scrolling with Infinite Loop
+    // 6. Skills Slider (keep your existing code)
     const skillsSlider = document.querySelector('.skills-slider');
     const skillsTrack = document.querySelector('.skills-track');
-
     if (skillsSlider && skillsTrack) {
+        // ... (keep your existing slider code as-is)
         let isDown = false;
         let startX;
         let currentTranslate = 0;
         let previousTranslate = 0;
         let pauseTimeout;
 
-        // Get current transform value
         function getCurrentTransform() {
             const style = window.getComputedStyle(skillsTrack);
             const matrix = new DOMMatrix(style.transform);
-            return matrix.m41; // translateX value
+            return matrix.m41;
         }
 
-        // Calculate half width for seamless loop
         function getLoopWidth() {
-            // Count only the original items (not duplicates)
             const items = skillsTrack.querySelectorAll('.skill-item');
-            const itemCount = items.length / 2; // Half because items are duplicated
+            const itemCount = items.length / 2;
             let width = 0;
-
             for (let i = 0; i < itemCount; i++) {
                 width += items[i].offsetWidth;
                 if (i < itemCount - 1) {
-                    width += parseFloat(getComputedStyle(skillsTrack).gap || 48); // 3rem = 48px
+                    width += parseFloat(getComputedStyle(skillsTrack).gap || 48);
                 }
             }
-
             return width;
         }
 
-        // Seamlessly wrap position for infinite loop
         function wrapPosition(position) {
             const loopWidth = getLoopWidth();
-
-            // If scrolled too far right (too negative)
-            if (position < -loopWidth) {
-                return position + loopWidth;
-            }
-            // If scrolled too far left (positive)
-            else if (position > 0) {
-                return position - loopWidth;
-            }
-
+            if (position < -loopWidth) return position + loopWidth;
+            else if (position > 0) return position - loopWidth;
             return position;
         }
 
-        // Custom animation for smooth auto-scroll
         let animationFrameId = null;
         let isAutoScrolling = false;
 
         function startCustomAutoScroll() {
             if (isAutoScrolling) return;
-
             isAutoScrolling = true;
-            const scrollSpeed = 0.5; // pixels per frame (adjust for speed)
+            const scrollSpeed = 0.5;
 
             function animate() {
                 if (!isAutoScrolling) return;
-
                 currentTranslate = getCurrentTransform() - scrollSpeed;
                 currentTranslate = wrapPosition(currentTranslate);
                 skillsTrack.style.transform = `translateX(${currentTranslate}px)`;
-
                 animationFrameId = requestAnimationFrame(animate);
             }
-
             animate();
         }
 
@@ -363,85 +323,334 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Smoothly transition back to auto-scroll
         function resumeAutoScroll() {
             clearTimeout(pauseTimeout);
-            pauseTimeout = setTimeout(() => {
-                // Start custom smooth auto-scroll from current position
-                startCustomAutoScroll();
-            }, 1500); // Resume after 1.5 seconds of inactivity
+            pauseTimeout = setTimeout(() => startCustomAutoScroll(), 1500);
         }
 
-        // Drag to scroll functionality
         skillsSlider.addEventListener('mousedown', (e) => {
             isDown = true;
             skillsSlider.style.cursor = 'grabbing';
             skillsSlider.style.userSelect = 'none';
-
             startX = e.pageX;
-
-            // Stop custom auto-scroll
             stopCustomAutoScroll();
-
-            // Stop CSS animation and get current position
             skillsTrack.style.animationPlayState = 'paused';
             skillsTrack.style.animation = 'none';
             skillsTrack.style.transition = '';
             previousTranslate = getCurrentTransform();
         });
 
-        skillsSlider.addEventListener('mouseleave', () => {
-            if (isDown) {
-                isDown = false;
-                skillsSlider.style.cursor = 'grab';
-                skillsSlider.style.userSelect = 'auto';
-                resumeAutoScroll();
-            }
-        });
-
-        skillsSlider.addEventListener('mouseup', () => {
-            if (isDown) {
-                isDown = false;
-                skillsSlider.style.cursor = 'grab';
-                skillsSlider.style.userSelect = 'auto';
-                resumeAutoScroll();
-            }
+        ['mouseleave', 'mouseup'].forEach(evt => {
+            skillsSlider.addEventListener(evt, () => {
+                if (isDown) {
+                    isDown = false;
+                    skillsSlider.style.cursor = 'grab';
+                    skillsSlider.style.userSelect = 'auto';
+                    resumeAutoScroll();
+                }
+            });
         });
 
         skillsSlider.addEventListener('mousemove', (e) => {
             if (!isDown) return;
             e.preventDefault();
-
             const currentX = e.pageX;
             const diff = currentX - startX;
             currentTranslate = previousTranslate + diff;
-
-            // Apply infinite loop wrapping
             currentTranslate = wrapPosition(currentTranslate);
-
-            // Update previousTranslate if we wrapped
             const wrappedDiff = currentTranslate - previousTranslate;
             if (Math.abs(wrappedDiff) > 1000) {
-                // We wrapped, so update startX to maintain smooth dragging
                 previousTranslate = currentTranslate;
                 startX = currentX;
             }
-
             skillsTrack.style.transform = `translateX(${currentTranslate}px)`;
         });
 
-        // Set initial cursor
         skillsSlider.style.cursor = 'grab';
+        // Start auto-scroll
+        setTimeout(resumeAutoScroll, 1000);
     }
+
+    // ===============================
+    // Certificates Grid (Clean Version)
+    // ===============================
+    const certificateFiles = [{
+            file: "Screenshot_2026-01-29_135240.png",
+            title: "ทักษะการเขียนโปรแกรมคอมพิวเตอร์ด้วยภาษาซี"
+        },
+        {
+            file: "Screenshot_2026-01-29_135251.png",
+            title: "ภาษา Python สำหรับวิทยาการข้อมูล"
+        },
+        {
+            file: "Screenshot_2026-01-29_135306.png",
+            title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์"
+        },
+        {
+            file: "Screenshot_2026-01-29_135322.png",
+            title: "อบรมปัญญาประดิษฐ์กับภาพทางการเเพทย์"
+        },
+        {
+            file: "Screenshot_2026-01-29_135335.png",
+            title: "โครงการหลักสูตรการใช้ LLM เชื่อมต่อ API"
+        },
+        {
+            file: "Screenshot_2026-01-29_135347.png",
+            title: "การรู้เทคโนโลยีสารสนเทศ"
+        },
+        {
+            file: "Screenshot_2026-01-29_135400.png",
+            title: "ก้าวสู่การเป็นนักวิเคราะห์และออกแบบระบบมืออาชีพ"
+        },
+        {
+            file: "Screenshot_2026-01-29_135425.png",
+            title: "เทคโนโลยีคอมพิวเตอร์และการจัดการสารสนเทศเพื่อสังคมและเศรษฐกิจ"
+        },
+        {
+            file: "Screenshot_2026-01-29_135441.png",
+            title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์"
+        },
+        {
+            file: "Screenshot_2026-01-29_135452.png",
+            title: "ทักษาคอมพิวเตอร์และเทคโนโลยีสารสนเทศและการสื่อสาร"
+        },
+        {
+            file: "Screenshot_2026-01-29_135506.png",
+            title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1"
+        },
+        {
+            file: "Screenshot_2026-01-29_135515.png",
+            title: "นวัตกรรมและเทคโนโลยีดิจิตอลเพื่อการศึกษา"
+        },
+        {
+            file: "Screenshot_2026-01-29_135535.png",
+            title: "บทนำปัญญาประดิษฐ์"
+        },
+        {
+            file: "Screenshot_2026-01-29_135553.png",
+            title: "การเขียนโปรเเกรมพื้นฐานสำหรับ AI"
+        },
+        {
+            file: "Screenshot_2026-01-29_135608.png",
+            title: "การสร้าง AI โดยใช้ Python"
+        },
+        {
+            file: "Screenshot_2026-01-29_135637.png",
+            title: "เริ่มต้นเรียนรู้ปัญญาประดิษฐ์เเละการเขียนโปรเเกรม"
+        },
+        {
+            file: "Screenshot_2026-01-30_140255.png",
+            title: "การประยุกต์ใช้ปัญญาประดิษฐ์ขั้นสูง"
+        },
+        {
+            file: "Screenshot_2026-01-29_135650.png",
+            title: "ปัญญาประดิษฐ์เเบบดั้งเดิมสู่ปัญญาประดิษฐ์ขั้นสูง"
+        },
+        {
+            file: "Screenshot_2026-01-29_135708.png",
+            title: "เทคนิคการเรียนรู้ของเครื่อง ทำงานอย่างไร"
+        },
+        {
+            file: "Screenshot_2026-01-29_135721.png",
+            title: "ปัญญาประดิษฐ์เเละเทคโนโลยีการปฎิสัมพันธ์ระหว่างมนุษย์เเละเครื่องจักร"
+        },
+        {
+            file: "Screenshot_2026-01-29_135737.png",
+            title: "ไมโครซอฟท์ เวิร์ด"
+        },
+        {
+            file: "Screenshot_2026-01-29_135754.png",
+            title: "ไมโครซอฟท์ เพาเวอร์ เเอป"
+        },
+        {
+            file: "Screenshot_2026-01-29_135805.png",
+            title: "คอมพิวเตอร์สารสนเทศขั้นพื้นฐาน"
+        },
+        {
+            file: "Screenshot_2026-01-29_135825.png",
+            title: "ภาษาอังกฤษเทคโนโลยีช่างอุตสาหกรรม"
+        },
+        {
+            file: "Screenshot_2026-01-29_135844.png",
+            title: "การออกเเบบการนำเสนองานอย่างสร้างสรรค์เเละทันสมัย"
+        },
+        {
+            file: "Screenshot_2026-01-29_135854.png",
+            title: "ภาษา Python สำหรับวิทยาการข้อมูล"
+        },
+        {
+            file: "Screenshot_2026-01-29_135620.png",
+            title: "Learn-AI AI104 - การประยุกต์ใช้ปัญญาประดิษฐ์ขั้นสูง"
+        },
+        {
+            file: "Screenshot_2026-01-29_135906.png",
+            title: "เทคโนโลยีสารสนเทศในยุคดิจิทัล"
+        },
+        {
+            file: "Screenshot_2026-01-30_140816.png",
+            title: "การบริหารจัดการระบบและเครือข่าย | System and Network Management"
+        },
+        {
+            file: "Screenshot_2026-01-30_140830.png",
+            title: "ภาษาอังกฤษสำหรับนักคอมพิวเตอร์"
+        },
+        {
+            file: "Screenshot_2026-01-30_140842.png",
+            title: "เครือข่ายและความปลอดภัย | Network and Security"
+        },
+        {
+            file: "Screenshot_2026-01-30_140901.png",
+            title: "โปรแกรม Python สำหรับการคำนวณทางวิทยาศาสตร์"
+        },
+        {
+            file: "Screenshot_2026-01-30_141023.png",
+            title: "การเขียนโปรแกรมคอมพิวเตอร์เบื้องต้นสำหรับระบบสารสนเทศ"
+        },
+        {
+            file: "Screenshot_2026-01-30_141209.png",
+            title: "เทคโนโลยีสารสนเทศเพื่อชีวิต"
+        },
+        {
+            file: "Screenshot_2026-01-30_141219.png",
+            title: "วิทยาการข้อมูลเบื้องต้น"
+        },
+        {
+            file: "Screenshot_2026-01-30_141230.png",
+            title: "วิทยาการข้อมูลและการประยุกต์ใช้"
+        },
+        {
+            file: "Screenshot_2026-01-30_141248.png",
+            title: "ความรู้พื้นฐานเกี่ยวกับบิ๊กดาตา"
+        },
+        {
+            file: "Screenshot_2026-01-30_141310.png",
+            title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์ (ม.ขอนแก่น)"
+        },
+        {
+            file: "Screenshot_2026-01-30_141320.png",
+            title: "พื้นฐาน Internet of Things (IoTs)"
+        },
+        {
+            file: "Screenshot_2026-01-30_141336.png",
+            title: "เทคโนโลยีฮาร์ดแวร์และซอฟต์แวร์ระบบ"
+        },
+        {
+            file: "Screenshot_2026-01-30_141400.png",
+            title: "ระบบสมองกลฝังตัวและเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง"
+        },
+        {
+            file: "Screenshot_2026-01-30_141419.png",
+            title: "การเข้าใจดิจิทัล"
+        },
+        {
+            file: "Screenshot_2026-01-30_141445.png",
+            title: "ทักษะความเข้าใจ การใช้เทคโนโลยีดิจิทัล และความมั่นคงปลอดภัยทางไซเบอร์"
+        },
+        {
+            file: "Screenshot_2026-01-30_141525.png",
+            title: "ทักษะคอมพิวเตอร์และเทคโนโลยีสารสนเทศและการสื่อสาร (ม.ขอนแก่น)"
+        },
+        {
+            file: "Screenshot_2026-01-30_141542.png",
+            title: "หลักสูตรการประยุกต์และพัฒนาเว็บไซต์ด้วย Google Sites"
+        }
+    ];
+
+    const certGrid = document.getElementById("certificatesGrid");
+    if (!certGrid) return;
+
+    const INITIAL_VISIBLE = 9; // 3 rows × 4 columns
+    let expanded = false;
+    const cards = [];
+
+    // Create all cards
+    certificateFiles.forEach(cert => {
+        const displayName = cert.title;
+        const imagePath = `./src/certificates/${cert.file}`;
+        const card = document.createElement("div");
+        card.className = "certificate-card";
+        card.innerHTML = `
+            <div class="certificate-image">
+                <img src="${imagePath}" alt="${displayName}" loading="lazy" />
+                <div class="certificate-overlay">
+                    <i class="fas fa-search-plus"></i>
+                </div>
+            </div>
+            <div class="certificate-info">
+                <h3>${displayName}</h3>
+            </div>
+        `;
+        card.addEventListener("click", () => openImageModal(imagePath, displayName));
+        certGrid.appendChild(card);
+        cards.push(card);
+    });
+
+    // Hide extra cards initially
+    cards.forEach((card, idx) => {
+        if (idx >= INITIAL_VISIBLE) card.style.display = 'none';
+    });
+
+    // Add "Show More" button
+    const showMoreContainer = document.createElement('div');
+    showMoreContainer.className = 'cert-show-more';
+    showMoreContainer.style.textAlign = 'center';
+    showMoreContainer.style.marginTop = '1.5rem';
+
+    const showMoreBtn = document.createElement('button');
+    showMoreBtn.id = 'showAllCertsBtn';
+    showMoreBtn.className = 'btn btn-outline';
+    showMoreBtn.textContent = currentLang === 'th' ? 'ดูเพิ่มเติม' : 'View All';
+    showMoreBtn.addEventListener('click', () => {
+        expanded = !expanded;
+        cards.forEach((card, idx) => {
+            card.style.display = (expanded || idx < INITIAL_VISIBLE) ? '' : 'none';
+        });
+        showMoreBtn.textContent = expanded ?
+            (currentLang === 'th' ? 'ซ่อน' : 'Show Less') :
+            (currentLang === 'th' ? 'ดูเพิ่มเติม' : 'View All');
+    });
+
+    showMoreContainer.appendChild(showMoreBtn);
+    certGrid.parentNode.insertBefore(showMoreContainer, certGrid.nextSibling);
+
+    // Update button text on language change
+    const originalChangeLanguage = changeLanguage;
+    window.changeLanguage = function (lang) {
+        originalChangeLanguage(lang);
+        const btn = document.getElementById('showAllCertsBtn');
+        if (btn) {
+            if (expanded) {
+                btn.textContent = lang === 'th' ? 'ซ่อน' : 'Show Less';
+            } else {
+                btn.textContent = lang === 'th' ? 'ดูเพิ่มเติม' : 'View All';
+            }
+        }
+    };
+
+    // Replace project placeholders with images from src/projects
+    // Update this array when you add/remove images in the folder
+    const projectImages = [
+        './src/projects/Screenshot 2026-01-30 153624.png',
+        './src/projects/Screenshot 2026-01-30 160849.png',
+        './src/projects/Screenshot 2026-01-30 155921.png'
+    ];
+
+    const projectImgEls = document.querySelectorAll('.project-row .project-image img');
+    projectImgEls.forEach((imgEl, idx) => {
+        if (projectImages[idx]) {
+            imgEl.src = projectImages[idx];
+            const placeholder = imgEl.parentElement.querySelector('.image-placeholder');
+            if (placeholder) placeholder.style.display = 'none';
+        }
+    });
 });
 
-// Custom Smooth Scroll Function with Easing
+// Custom Smooth Scroll Function
 function smoothScrollTo(targetPosition, duration) {
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
     let startTime = null;
 
-    // Easing function (easeInOutCubic)
     function easeInOutCubic(t) {
         return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
     }
@@ -451,261 +660,9 @@ function smoothScrollTo(targetPosition, duration) {
         const timeElapsed = currentTime - startTime;
         const progress = Math.min(timeElapsed / duration, 1);
         const ease = easeInOutCubic(progress);
-
         window.scrollTo(0, startPosition + (distance * ease));
-
-        if (timeElapsed < duration) {
-            requestAnimationFrame(animation);
-        }
+        if (timeElapsed < duration) requestAnimationFrame(animation);
     }
 
     requestAnimationFrame(animation);
-}
-
-// ===============================
-// Certificates (auto from filename)
-// ===============================
-const certificateFiles = [{
-    file: "Screenshot_2026-01-29_135240.png",
-    title: "ทักษะการเขียนโปรแกรมคอมพิวเตอร์ด้วยภาษาซี"
-},
-{
-    file: "Screenshot_2026-01-29_135251.png",
-    title: "ภาษา Python สำหรับวิทยาการข้อมูล"
-},
-{
-    file: "Screenshot_2026-01-29_135306.png",
-    title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์"
-},
-{
-    file: "Screenshot_2026-01-29_135322.png",
-    title: "อบรมปัญญาประดิษฐ์กับภาพทางการเเพทย์"
-},
-{
-    file: "Screenshot_2026-01-29_135335.png",
-    title: "โครงการหลักสูตรการใช้ LLM เชื่อมต่อ API"
-},
-{
-    file: "Screenshot_2026-01-29_135347.png",
-    title: "การรู้เทคโนโลยีสารสนเทศ"
-},
-{
-    file: "Screenshot_2026-01-29_135400.png",
-    title: "ก้าวสู่การเป็นนักวิเคราะห์และออกแบบระบบมืออาชีพ"
-},
-{
-    file: "Screenshot_2026-01-29_135425.png",
-    title: "เทคโนโลยีคอมพิวเตอร์และการจัดการสารสนเทศเพื่อสังคมและเศรษฐกิจ"
-},
-{
-    file: "Screenshot_2026-01-29_135441.png",
-    title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์"
-},
-{
-    file: "Screenshot_2026-01-29_135452.png",
-    title: "ทักษาคอมพิวเตอร์และเทคโนโลยีสารสนเทศและการสื่อสาร"
-},
-{
-    file: "Screenshot_2026-01-29_135506.png",
-    title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1"
-},
-{
-    file: "Screenshot_2026-01-29_135515.png",
-    title: "นวัตกรรมและเทคโนโลยีดิจิตอลเพื่อการศึกษา"
-},
-{
-    file: "Screenshot_2026-01-29_135535.png",
-    title: "บทนำปัญญาประดิษฐ์"
-},
-{
-    file: "Screenshot_2026-01-29_135553.png",
-    title: "การเขียนโปรเเกรมพื้นฐานสำหรับ AI"
-},
-{
-    file: "Screenshot_2026-01-29_135608.png",
-    title: "การสร้าง AI โดยใช้ Python"
-},
-{
-    file: "Screenshot_2026-01-29_135637.png",
-    title: "เริ่มต้นเรียนรู้ปัญญาประดิษฐ์เเละการเขียนโปรเเกรม"
-},
-{
-    file: "Screenshot_2026-01-30_140255.png",
-    title: "การประยุกต์ใช้ปัญญาประดิษฐ์ขั้นสูง"
-},
-{
-    file: "Screenshot_2026-01-29_135650.png",
-    title: "ปัญญาประดิษฐ์เเบบดั้งเดิมสู่ปัญญาประดิษฐ์ขั้นสูง"
-},
-{
-    file: "Screenshot_2026-01-29_135708.png",
-    title: "เทคนิคการเรียนรู้ของเครื่อง ทำงานอย่างไร"
-},
-{
-    file: "Screenshot_2026-01-29_135721.png",
-    title: "ปัญญาประดิษฐ์เเละเทคโนโลยีการปฎิสัมพันธ์ระหว่างมนุษย์เเละเครื่องจักร"
-},
-{
-    file: "Screenshot_2026-01-29_135737.png",
-    title: "ไมโครซอฟท์ เวิร์ด"
-},
-{
-    file: "Screenshot_2026-01-29_135754.png",
-    title: "ไมโครซอฟท์ เพาเวอร์ เเอป"
-},
-{
-    file: "Screenshot_2026-01-29_135805.png",
-    title: "คอมพิวเตอร์สารสนเทศขั้นพื้นฐาน"
-},
-{
-    file: "Screenshot_2026-01-29_135825.png",
-    title: "ภาษาอังกฤษเทคโนโลยีช่างอุตสาหกรรม"
-},
-{
-    file: "Screenshot_2026-01-29_135844.png",
-    title: "การออกเเบบการนำเสนองานอย่างสร้างสรรค์เเละทันสมัย"
-},
-{
-    file: "Screenshot_2026-01-29_135854.png",
-    title: "ภาษา Python สำหรับวิทยาการข้อมูล"
-},
-{
-    file: "Screenshot_2026-01-29_135620.png",
-    title: "Learn-AI AI104 - การประยุกต์ใช้ปัญญาประดิษฐ์ขั้นสูง"
-},
-{
-    file: "Screenshot_2026-01-29_135906.png",
-    title: "เทคโนโลยีสารสนเทศในยุคดิจิทัล"
-},
-{
-    file: "Screenshot_2026-01-30_140816.png",
-    title: "การบริหารจัดการระบบและเครือข่าย | System and Network Management"
-},
-{
-    file: "Screenshot_2026-01-30_140830.png",
-    title: "ภาษาอังกฤษสำหรับนักคอมพิวเตอร์"
-},
-{
-    file: "Screenshot_2026-01-30_140842.png",
-    title: "เครือข่ายและความปลอดภัย | Network and Security"
-},
-{
-    file: "Screenshot_2026-01-30_140901.png",
-    title: "โปรแกรม Python สำหรับการคำนวณทางวิทยาศาสตร์"
-},
-{
-    file: "Screenshot_2026-01-30_141023.png",
-    title: "การเขียนโปรแกรมคอมพิวเตอร์เบื้องต้นสำหรับระบบสารสนเทศ"
-},
-{
-    file: "Screenshot_2026-01-30_141209.png",
-    title: "เทคโนโลยีสารสนเทศเพื่อชีวิต"
-},
-{
-    file: "Screenshot_2026-01-30_141219.png",
-    title: "วิทยาการข้อมูลเบื้องต้น"
-},
-{
-    file: "Screenshot_2026-01-30_141230.png",
-    title: "วิทยาการข้อมูลและการประยุกต์ใช้"
-},
-{
-    file: "Screenshot_2026-01-30_141248.png",
-    title: "ความรู้พื้นฐานเกี่ยวกับบิ๊กดาตา"
-},
-{
-    file: "Screenshot_2026-01-30_141310.png",
-    title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์ (ม.ขอนแก่น)"
-},
-{
-    file: "Screenshot_2026-01-30_141320.png",
-    title: "พื้นฐาน Internet of Things (IoTs)"
-},
-{
-    file: "Screenshot_2026-01-30_141336.png",
-    title: "เทคโนโลยีฮาร์ดแวร์และซอฟต์แวร์ระบบ"
-},
-{
-    file: "Screenshot_2026-01-30_141400.png",
-    title: "ระบบสมองกลฝังตัวและเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง"
-},
-{
-    file: "Screenshot_2026-01-30_141419.png",
-    title: "การเข้าใจดิจิทัล"
-},
-{
-    file: "Screenshot_2026-01-30_141445.png",
-    title: "ทักษะความเข้าใจ การใช้เทคโนโลยีดิจิทัล และความมั่นคงปลอดภัยทางไซเบอร์"
-},
-{
-    file: "Screenshot_2026-01-30_141525.png",
-    title: "ทักษะคอมพิวเตอร์และเทคโนโลยีสารสนเทศและการสื่อสาร (ม.ขอนแก่น)"
-},
-{
-    file: "Screenshot_2026-01-30_141542.png",
-    title: "หลักสูตรการประยุกต์และพัฒนาเว็บไซต์ด้วย Google Sites"
-}
-];
-
-const certGrid = document.getElementById("certificatesGrid");
-
-certificateFiles.forEach((cert) => {
-    const displayName = cert.title;
-
-    const card = document.createElement("div");
-    card.className = "certificate-card";
-    card.dataset.image = `./src/certificates/${cert.file}`;
-
-    card.innerHTML = `
-        <div class="certificate-image">
-            <img src="./src/certificates/${cert.file}" alt="${displayName}" loading="lazy">
-            <div class="certificate-overlay">
-                <i class="fas fa-search-plus"></i>
-            </div>
-        </div>
-        <div class="certificate-info">
-            <h3>${displayName}</h3>
-        </div>
-    `;
-
-    card.addEventListener("click", () => {
-        openImageModal(card.dataset.image, displayName);
-    });
-
-    certGrid.appendChild(card);
-});
-
-
-// Image Modal Function
-function openImageModal(imageSrc, title) {
-    const modal = document.getElementById('certificateModal');
-    const pdfViewer = document.getElementById('pdfViewer');
-    const modalCaption = document.getElementById('modalCaption');
-    const modalBody = document.querySelector('.modal-body');
-
-    // Hide PDF viewer and show image instead
-    pdfViewer.style.display = 'none';
-
-    // Remove existing image if any
-    const existingImg = modalBody.querySelector('.modal-image');
-    if (existingImg) {
-        existingImg.remove();
-    }
-
-    // Create and insert image
-    const img = document.createElement('img');
-    img.src = imageSrc;
-    img.alt = title;
-    img.className = 'modal-image';
-    img.style.cssText = 'max-width: 90%; max-height: 85vh; object-fit: contain; margin: auto;';
-
-    modalBody.insertBefore(img, modalBody.firstChild);
-    modalCaption.textContent = title;
-    modal.style.display = 'block';
-
-    // Update download button
-    const downloadBtn = document.getElementById('downloadPdf');
-    downloadBtn.href = imageSrc;
-    downloadBtn.download = imageSrc.split('/').pop();
-    downloadBtn.innerHTML = '<i class="fas fa-download"></i> ดาวน์โหลดรูปภาพ';
 }
