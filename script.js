@@ -30,8 +30,8 @@ const translations = {
         edu_uni_school: "มหาวิทยาลัยพะเยา",
         edu_uni_date: "2566 - ปัจจุบัน",
         edu_hs_degree: "มัธยมศึกษาตอนปลาย",
-        edu_hs_program: "สายญี่ปุ่น-อังกฤษ",
-        edu_hs_school: "โรงเรียนลำปางกัลยาณี",
+        edu_hs_program: "สายเกาหลี-อังกฤษ",
+        edu_hs_school: "โรงเรียนจักรคำคณาทร จังหวัดลำพูน",
         edu_hs_date: "2563 - 2566",
         gpa_label: "เกรดเฉลี่ยสะสม:",
         projects_title: "ผลงาน",
@@ -465,57 +465,208 @@ function smoothScrollTo(targetPosition, duration) {
 // ===============================
 // Certificates (auto from filename)
 // ===============================
-const certificateFiles = [
-    "Screenshot 2026-01-29 135240.png",
-    "Screenshot 2026-01-29 135251.png",
-    "Screenshot 2026-01-29 135306.png",
-    "Screenshot 2026-01-29 135322.png",
-    "Screenshot 2026-01-29 135335.png",
-    "Screenshot 2026-01-29 135347.png",
-    "Screenshot 2026-01-29 135400.png",
-    "Screenshot 2026-01-29 135425.png",
-    "Screenshot 2026-01-29 135441.png",
-    "Screenshot 2026-01-29 135452.png",
-    "Screenshot 2026-01-29 135506.png",
-    "Screenshot 2026-01-29 135515.png",
-    "Screenshot 2026-01-29 135535.png",
-    "Screenshot 2026-01-29 135553.png",
-    "Screenshot 2026-01-29 135608.png",
-    "Screenshot 2026-01-29 135620.png",
-    "Screenshot 2026-01-29 135637.png",
-    "Screenshot 2026-01-29 135650.png",
-    "Screenshot 2026-01-29 135708.png",
-    "Screenshot 2026-01-29 135721.png",
-    "Screenshot 2026-01-29 135737.png",
-    "Screenshot 2026-01-29 135754.png",
-    "Screenshot 2026-01-29 135805.png",
-    "Screenshot 2026-01-29 135825.png",
-    "Screenshot 2026-01-29 135844.png",
-    "Screenshot 2026-01-29 135854.png",
-    "Screenshot 2026-01-29 135906.png"
+const certificateFiles = [{
+    file: "Screenshot_2026-01-29_135240.png",
+    title: "ทักษะการเขียนโปรแกรมคอมพิวเตอร์ด้วยภาษาซี"
+},
+{
+    file: "Screenshot_2026-01-29_135251.png",
+    title: "ภาษา Python สำหรับวิทยาการข้อมูล"
+},
+{
+    file: "Screenshot_2026-01-29_135306.png",
+    title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์"
+},
+{
+    file: "Screenshot_2026-01-29_135322.png",
+    title: "อบรมปัญญาประดิษฐ์กับภาพทางการเเพทย์"
+},
+{
+    file: "Screenshot_2026-01-29_135335.png",
+    title: "โครงการหลักสูตรการใช้ LLM เชื่อมต่อ API"
+},
+{
+    file: "Screenshot_2026-01-29_135347.png",
+    title: "การรู้เทคโนโลยีสารสนเทศ"
+},
+{
+    file: "Screenshot_2026-01-29_135400.png",
+    title: "ก้าวสู่การเป็นนักวิเคราะห์และออกแบบระบบมืออาชีพ"
+},
+{
+    file: "Screenshot_2026-01-29_135425.png",
+    title: "เทคโนโลยีคอมพิวเตอร์และการจัดการสารสนเทศเพื่อสังคมและเศรษฐกิจ"
+},
+{
+    file: "Screenshot_2026-01-29_135441.png",
+    title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์"
+},
+{
+    file: "Screenshot_2026-01-29_135452.png",
+    title: "ทักษาคอมพิวเตอร์และเทคโนโลยีสารสนเทศและการสื่อสาร"
+},
+{
+    file: "Screenshot_2026-01-29_135506.png",
+    title: "การเขียนโปรแกรมคอมพิวเตอร์พื้นฐาน ด้วยภาษาซี 1"
+},
+{
+    file: "Screenshot_2026-01-29_135515.png",
+    title: "นวัตกรรมและเทคโนโลยีดิจิตอลเพื่อการศึกษา"
+},
+{
+    file: "Screenshot_2026-01-29_135535.png",
+    title: "บทนำปัญญาประดิษฐ์"
+},
+{
+    file: "Screenshot_2026-01-29_135553.png",
+    title: "การเขียนโปรเเกรมพื้นฐานสำหรับ AI"
+},
+{
+    file: "Screenshot_2026-01-29_135608.png",
+    title: "การสร้าง AI โดยใช้ Python"
+},
+{
+    file: "Screenshot_2026-01-29_135637.png",
+    title: "เริ่มต้นเรียนรู้ปัญญาประดิษฐ์เเละการเขียนโปรเเกรม"
+},
+{
+    file: "Screenshot_2026-01-30_140255.png",
+    title: "การประยุกต์ใช้ปัญญาประดิษฐ์ขั้นสูง"
+},
+{
+    file: "Screenshot_2026-01-29_135650.png",
+    title: "ปัญญาประดิษฐ์เเบบดั้งเดิมสู่ปัญญาประดิษฐ์ขั้นสูง"
+},
+{
+    file: "Screenshot_2026-01-29_135708.png",
+    title: "เทคนิคการเรียนรู้ของเครื่อง ทำงานอย่างไร"
+},
+{
+    file: "Screenshot_2026-01-29_135721.png",
+    title: "ปัญญาประดิษฐ์เเละเทคโนโลยีการปฎิสัมพันธ์ระหว่างมนุษย์เเละเครื่องจักร"
+},
+{
+    file: "Screenshot_2026-01-29_135737.png",
+    title: "ไมโครซอฟท์ เวิร์ด"
+},
+{
+    file: "Screenshot_2026-01-29_135754.png",
+    title: "ไมโครซอฟท์ เพาเวอร์ เเอป"
+},
+{
+    file: "Screenshot_2026-01-29_135805.png",
+    title: "คอมพิวเตอร์สารสนเทศขั้นพื้นฐาน"
+},
+{
+    file: "Screenshot_2026-01-29_135825.png",
+    title: "ภาษาอังกฤษเทคโนโลยีช่างอุตสาหกรรม"
+},
+{
+    file: "Screenshot_2026-01-29_135844.png",
+    title: "การออกเเบบการนำเสนองานอย่างสร้างสรรค์เเละทันสมัย"
+},
+{
+    file: "Screenshot_2026-01-29_135854.png",
+    title: "ภาษา Python สำหรับวิทยาการข้อมูล"
+},
+{
+    file: "Screenshot_2026-01-29_135620.png",
+    title: "Learn-AI AI104 - การประยุกต์ใช้ปัญญาประดิษฐ์ขั้นสูง"
+},
+{
+    file: "Screenshot_2026-01-29_135906.png",
+    title: "เทคโนโลยีสารสนเทศในยุคดิจิทัล"
+},
+{
+    file: "Screenshot_2026-01-30_140816.png",
+    title: "การบริหารจัดการระบบและเครือข่าย | System and Network Management"
+},
+{
+    file: "Screenshot_2026-01-30_140830.png",
+    title: "ภาษาอังกฤษสำหรับนักคอมพิวเตอร์"
+},
+{
+    file: "Screenshot_2026-01-30_140842.png",
+    title: "เครือข่ายและความปลอดภัย | Network and Security"
+},
+{
+    file: "Screenshot_2026-01-30_140901.png",
+    title: "โปรแกรม Python สำหรับการคำนวณทางวิทยาศาสตร์"
+},
+{
+    file: "Screenshot_2026-01-30_141023.png",
+    title: "การเขียนโปรแกรมคอมพิวเตอร์เบื้องต้นสำหรับระบบสารสนเทศ"
+},
+{
+    file: "Screenshot_2026-01-30_141209.png",
+    title: "เทคโนโลยีสารสนเทศเพื่อชีวิต"
+},
+{
+    file: "Screenshot_2026-01-30_141219.png",
+    title: "วิทยาการข้อมูลเบื้องต้น"
+},
+{
+    file: "Screenshot_2026-01-30_141230.png",
+    title: "วิทยาการข้อมูลและการประยุกต์ใช้"
+},
+{
+    file: "Screenshot_2026-01-30_141248.png",
+    title: "ความรู้พื้นฐานเกี่ยวกับบิ๊กดาตา"
+},
+{
+    file: "Screenshot_2026-01-30_141310.png",
+    title: "โปรแกรมคอมพิวเตอร์และขั้นตอนวิธีทางคอมพิวเตอร์ (ม.ขอนแก่น)"
+},
+{
+    file: "Screenshot_2026-01-30_141320.png",
+    title: "พื้นฐาน Internet of Things (IoTs)"
+},
+{
+    file: "Screenshot_2026-01-30_141336.png",
+    title: "เทคโนโลยีฮาร์ดแวร์และซอฟต์แวร์ระบบ"
+},
+{
+    file: "Screenshot_2026-01-30_141400.png",
+    title: "ระบบสมองกลฝังตัวและเทคโนโลยีอินเทอร์เน็ตของสรรพสิ่ง"
+},
+{
+    file: "Screenshot_2026-01-30_141419.png",
+    title: "การเข้าใจดิจิทัล"
+},
+{
+    file: "Screenshot_2026-01-30_141445.png",
+    title: "ทักษะความเข้าใจ การใช้เทคโนโลยีดิจิทัล และความมั่นคงปลอดภัยทางไซเบอร์"
+},
+{
+    file: "Screenshot_2026-01-30_141525.png",
+    title: "ทักษะคอมพิวเตอร์และเทคโนโลยีสารสนเทศและการสื่อสาร (ม.ขอนแก่น)"
+},
+{
+    file: "Screenshot_2026-01-30_141542.png",
+    title: "หลักสูตรการประยุกต์และพัฒนาเว็บไซต์ด้วย Google Sites"
+}
 ];
 
 const certGrid = document.getElementById("certificatesGrid");
 
-certificateFiles.forEach((file, index) => {
-    const fileName = file.replace(".png", "");
-    const displayName = `Certificate ${index + 1}`;
+certificateFiles.forEach((cert) => {
+    const displayName = cert.title;
 
     const card = document.createElement("div");
     card.className = "certificate-card";
-    card.dataset.image = `./src/certificates/${file}`;
+    card.dataset.image = `./src/certificates/${cert.file}`;
 
     card.innerHTML = `
-    <div class="certificate-image">
-      <img src="./src/certificates/${file}" alt="${displayName}" loading="lazy">
-      <div class="certificate-overlay">
-        <i class="fas fa-search-plus"></i>
-      </div>
-    </div>
-    <div class="certificate-info">
-      <h3>${displayName}</h3>
-    </div>
-  `;
+        <div class="certificate-image">
+            <img src="./src/certificates/${cert.file}" alt="${displayName}" loading="lazy">
+            <div class="certificate-overlay">
+                <i class="fas fa-search-plus"></i>
+            </div>
+        </div>
+        <div class="certificate-info">
+            <h3>${displayName}</h3>
+        </div>
+    `;
 
     card.addEventListener("click", () => {
         openImageModal(card.dataset.image, displayName);
@@ -523,6 +674,7 @@ certificateFiles.forEach((file, index) => {
 
     certGrid.appendChild(card);
 });
+
 
 // Image Modal Function
 function openImageModal(imageSrc, title) {
