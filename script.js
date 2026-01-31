@@ -10,6 +10,7 @@ const translations = {
         hero_subtitle: "นักศึกษา CS ปี 3 | Full Stack Developer",
         btn_projects: "ดูผลงาน",
         btn_resume: "ดาวน์โหลด Resume",
+        btn_course_structure: "โครงสร้างหลักสูตร",
         btn_contact: "ติดต่อสอบถาม",
         about_title: "เกี่ยวกับ",
         about_title_accent: "ฉัน",
@@ -67,6 +68,7 @@ const translations = {
 
         btn_projects: "View Projects",
         btn_resume: "Download Resume",
+        btn_course_structure: "Course Structure",
         btn_contact: "Contact Me",
 
         about_title: "About",
