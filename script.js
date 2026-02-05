@@ -124,8 +124,8 @@ const translations = {
         btn_view_all_projects: "View All Projects",
 
         nav_certificates: "Certificates",
-        certificates_title: "My",
-        certificates_title_accent: "Certificates"
+        certificates_title: "Certificate",
+        certificates_title_accent: ""
     }
 };
 
