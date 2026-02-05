@@ -132,21 +132,31 @@ const translations = {
 let currentLang = 'th';
 
 function changeLanguage(lang) {
+    if (!lang || !translations[lang]) return;
     currentLang = lang;
 
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-    document.getElementById(`btn-${lang}`).classList.add('active');
+    const langBtn = document.getElementById(`btn-${lang}`);
+    if (langBtn) langBtn.classList.add('active');
 
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const key = element.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            if (translations[lang][key].includes('<')) {
-                element.innerHTML = translations[lang][key];
+        const value = translations[lang] && translations[lang][key];
+        if (typeof value === 'string') {
+            if (value.indexOf('<') !== -1) {
+                element.innerHTML = value;
             } else {
-                element.textContent = translations[lang][key];
+                element.textContent = value;
             }
         }
     });
+
+    // Update any language-dependent UI created after initial load
+    const showBtn = document.getElementById('showAllCertsBtn');
+    if (showBtn) {
+        const isExpanded = showBtn.textContent === (currentLang === 'th' ? 'ซ่อน' : 'Show Less') || showBtn.dataset.expanded === 'true';
+        showBtn.textContent = isExpanded ? (currentLang === 'th' ? 'ซ่อน' : 'Show Less') : (currentLang === 'th' ? 'ดูเพิ่มเติม' : 'View All');
+    }
 
     localStorage.setItem('preferredLanguage', lang);
 }
@@ -212,6 +222,23 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Attach click handlers to language buttons (robust fallback to inline onclick)
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            let lang = btn.dataset.lang || null;
+            if (!lang) {
+                const id = btn.id || '';
+                if (id.startsWith('btn-')) lang = id.replace('btn-', '');
+            }
+            if (!lang) {
+                const onclick = btn.getAttribute('onclick') || '';
+                const m = onclick.match(/changeLanguage\(['\"](.+?)['\"]\)/);
+                if (m) lang = m[1];
+            }
+            if (lang) changeLanguage(lang);
+        });
+    });
 
     // 3. Scroll Animation
     const observer = new IntersectionObserver((entries) => {
