@@ -43,7 +43,7 @@ const translations = {
         proj2_desc: "ระบบตอบคำถามด้านสุขภาพแบบ Real-time ที่ออกแบบให้ใช้งานง่ายด้วย HTML, CSS และ JavaScript พร้อม UI/UX ที่ทันสมัย Backend ใช้ Flask (Python) ร่วมกับ JSON data และได้ผสาน LangChain กับ OpenRouter API ใช้โมเดล DeepSeek-R1 เพื่อตอบคำถามได้แม่นยำและรวดเร็ว",
         proj3_title: "Thai Sentiment Analysis System Using TF IDF",
         proj3_desc: "พัฒนาเว็บแอปพลิเคชันวิเคราะห์ความรู้สึกจากข้อความภาษาไทยด้วยเทคนิค Machine Learning โดยใช้โมเดล TF-IDF ร่วมกับ Logistic Regression พร้อมออกแบบและพัฒนา API ด้วย FastAPI สำหรับการทำนายผลแบบเรียลไทม์ ระบบสามารถคำนวณและแสดงค่า confidence score, latency (มิลลิวินาที) และเวอร์ชันของโมเดล เพื่อสนับสนุนการประเมินประสิทธิภาพเชิงเทคนิคของระบบ พร้อมทั้งออกแบบส่วนติดต่อผู้ใช้ด้วย Jinja2 templating และ static assets เพื่อให้สามารถทดสอบการทำงานผ่านเว็บเบราว์เซอร์ได้อย่างสะดวก",
-        contact_title: "ร่วมงานกับ<span class='text-accent'>ผม</span>",
+        contact_title: "ติดต่อ<span class='text-accent'>ผม</span>",
         contact_email_label: "อีเมล",
         contact_phone_label: "เบอร์โทรศัพท์",
         contact_github_label: "GitHub",
@@ -113,7 +113,7 @@ const translations = {
         proj3_title: "Thai Sentiment Analysis System Using TF-IDF",
         proj3_desc: "A Thai sentiment analysis web application developed using Machine Learning techniques, combining TF-IDF with Logistic Regression. The system includes a FastAPI-based backend for real-time predictions, displaying confidence scores, latency (in milliseconds), and model version information. The frontend is built using Jinja2 templating and static assets, allowing users to conveniently test the system via a web browser.",
 
-        contact_title: "Work with <span class='text-accent'>Me</span>",
+        contact_title: "Contact <span class='text-accent'>Me</span>",
         contact_email_label: "Email",
         contact_phone_label: "Phone",
         contact_github_label: "GitHub",
